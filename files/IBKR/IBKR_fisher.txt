@@ -1,0 +1,101 @@
+## Interactive Brokers Group, Inc. (IBKR) - Philip A. Fisher Analysis
+
+**Company:** Interactive Brokers Group, Inc. (IBKR)
+**Date of Analysis:** August 20, 2025
+**Primary Sources Reviewed:** 2024 Annual Report (10-K), Q1 2025 Quarterly Report (10-Q), Q2 2025 Earnings Call Transcript.
+
+### 1) Products/Services with Long Runway
+**Question:** Does the company have products or services with sufficient market potential to make possible a sizable increase in sales for at least several years?
+**Reasoning & Evidence:** Interactive Brokers operates as a global electronic broker, offering a wide and expanding range of products including stocks, options, futures, forex, bonds, and cryptocurrencies across more than 160 markets. The company is focused on growing its customer base, which reached 3.34 million accounts as of March 31, 2025, a 30% increase year-over-year. Management has emphasized a strategy of attracting more active and professional traders globally through its low-cost structure and advanced technology. The growth in customer accounts and equity, particularly from international markets, indicates a large and underpenetrated total addressable market.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000052/ibkr-20250331x10q.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000052/ibkr-20250331x10q.htm) (March 31, 2025), [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 2) Commitment to Ongoing Development
+**Question:** Does management have a determination to continue to develop products or processes that will further increase total sales potential once current lines mature?
+**Reasoning & Evidence:** IBKR has a long history of focusing on the development of proprietary software to automate broker-dealer functions. The company consistently enhances its trading platforms, such as the flagship Trader Workstation (TWS) and newer IBKR Desktop, and rolls out new products and services. Recent introductions include forecast contracts, expanded cryptocurrency trading, and enhanced tools for financial advisors like the AI-powered Commentary Generator. This continuous innovation demonstrates a clear commitment to developing new revenue streams and improving the customer experience to attract a wider client base.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 3) R&D Effectiveness Relative to Size
+**Question:** How effective are the company’s R&D efforts in relation to its size?
+**Reasoning & Evidence:** Interactive Brokers' core strength lies in its internally developed, integrated trading and risk management systems. The company does not rely on outside vendors for software development, which allows for rapid and cost-effective upgrades. This technology-focused approach, with management's direct involvement in design and prioritization, enables a rapid development cycle. While specific R&D expenditure figures are not broken out, the company's ability to continuously launch new products and features, while maintaining a low-cost structure, speaks to the high effectiveness of its development efforts relative to its size.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 4) Above-Average Sales Organization
+**Question:** Does the company have an above-average sales organization?
+**Reasoning & Evidence:** Interactive Brokers primarily relies on its low-cost value proposition and technologically advanced platform to attract customers, rather than a traditional sales force. The company's marketing efforts are supplemented by promotional offerings like the "Refer a Friend" program. The consistent, strong growth in customer accounts—a 30% increase to 3.34 million in the year ending March 31, 2025—indicates that its technology and pricing serve as an effective, automated sales engine. However, the model is not a conventional "sales organization" in Fisher's sense.
+**Answer:** No
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000052/ibkr-20250331x10q.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000052/ibkr-20250331x10q.htm) (March 31, 2025), [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 5) Worthwhile Profit Margins
+**Question:** Does the company have a worthwhile profit margin?
+**Reasoning & Evidence:** The company consistently reports high profit margins due to its automated business model and low-cost structure. For the year ended December 31, 2024, Interactive Brokers reported a pretax profit margin of 71%. The adjusted pretax profit margin was 72%. These margins are exceptionally high and demonstrate the firm's operational efficiency and profitability.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 6) Margin Improvement Actions
+**Question:** What is the company doing to maintain or improve profit margins?
+**Reasoning & Evidence:** Interactive Brokers' primary strategy for maintaining and improving margins is through automation and scalability. By continuously automating functions from account opening to compliance monitoring, the company minimizes the need for manual intervention, thereby controlling operating expenses even as the business grows. The growth in customer accounts and trading volumes leverages the company's fixed technology infrastructure, which should continue to support strong margins. Furthermore, the company's ability to earn significant net interest income on customer cash and margin loans provides a substantial and scalable revenue stream.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024), [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000052/ibkr-20250331x10q.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000052/ibkr-20250331x10q.htm) (March 31, 2025)
+
+### 7) Labor & Personnel Relations
+**Question:** Does the company have outstanding labor and personnel relations?
+**Reasoning & Evidence:** The company emphasizes a merit-based culture and invests in employee development through an internal training portal with over 1,000 courses. It offers industry-leading benefits, including fully funded healthcare premiums in the U.S., paid parental leave, and childcare support. An employee experience survey showed a 76% participation rate with results indicating high engagement and confidence. These factors suggest strong employee relations.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 8) Executive Relations
+**Question:** Does the company have outstanding executive relations?
+**Reasoning & Evidence:** There is significant stability in the executive team. The founder, Thomas Peterffy, remains Chairman, providing long-term vision. The management team is deeply involved in the technological aspects of the business. However, Mr. Peterffy's control of the majority of voting power and his chairmanship of the Compensation Committee could present potential conflicts of interest. This concentration of power, while providing stability, is a corporate governance concern.
+**Answer:** No
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 9) Depth of Management
+**Question:** Does the company have depth to its management?
+**Reasoning & Evidence:** The company's disclosures and public materials primarily feature the Chairman, Thomas Peterffy, and CEO, Milan Galik. While other executives are listed in filings, there is limited public information available regarding succession planning or the depth of the management bench beyond the top two leaders. The 2024 10-K notes that the loss of key employees could materially and adversely affect the business, indicating a potential key-person risk.
+**Answer:** No
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 10) Cost Analysis & Accounting Controls
+**Question:** How good are the company’s cost analysis and accounting controls?
+**Reasoning & Evidence:** Interactive Brokers' automated systems are central to its operations, providing real-time data feeds into its accounting systems. This allows the company to produce financial statements for all parts of its business daily. The company's filings provide detailed segment and geographic information. The auditor's opinion in the 2024 10-K was unqualified, and management's assessment of internal control over financial reporting was effective. This high level of automation and transparency suggests excellent cost and accounting controls.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024), [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000052/ibkr-20250331x10q.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000052/ibkr-20250331x10q.htm) (March 31, 2025)
+
+### 11) Industry-Specific Competitive Clues
+**Question:** Are there other aspects of the business—peculiar to the industry—that give important clues about how outstanding the company may be versus competition?
+**Reasoning & Evidence:** A key differentiator for Interactive Brokers is its proprietary IB SmartRouting system, which seeks the best possible execution price by dynamically routing orders across multiple market centers. This focus on execution quality, combined with some of the industry's lowest commission and financing rates, creates a strong competitive advantage, particularly with sophisticated and active traders. Additionally, the company's real-time, automated risk management system, which automatically liquidates under-margined positions, is a crucial feature that protects both the company and its clients from excessive losses.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 12) Long-Range vs Short-Range Profit Outlook
+**Question:** Does the company have a long-range outlook in regard to profits (willing to trade near-term results for durable growth)?
+**Reasoning & Evidence:** The company's four-decade history is rooted in the continuous, long-term development of its proprietary technology platform. Management consistently reinvests in its technology to expand product offerings and geographic reach, which prioritizes long-term franchise value over short-term earnings. This is evident in their ongoing global expansion and the development of new tools and platforms to attract a wider range of clients, from individual investors to large institutions.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](httpshttps://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 13) Equity Financing Dilution Risk
+**Question:** Is the company's financial position strong enough to fund foreseeable growth without resorting to equity financing that would meaningfully dilute existing shareholders?
+**Reasoning & Evidence:** The company has a strong capital position, with $12.4 billion in excess regulatory capital as of December 31, 2024. The business generates substantial cash flow from operations. While the company has a unique structure where it issues new Class A shares to purchase interests from its holding company (IBG Holdings LLC), this is part of a planned, long-term recapitalization process rather than a need to raise capital for operations. Given its strong capital base and profitability, the company is not expected to need dilutive equity financing for growth.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+### 14) Candor with Investors
+**Question:** Does management talk freely to investors when things are going well **and** when troubles occur (i.e., no “clam up”)?
+**Reasoning & Evidence:** Management, particularly Chairman Thomas Peterffy, provides detailed commentary on quarterly earnings calls and in other public forums. They discuss business trends, competitive dynamics, and operational metrics with a high degree of transparency. The earnings call transcripts show a willingness to answer detailed questions from analysts. The company's filings also provide extensive disclosure on risk factors and legal proceedings.
+**Answer:** Yes
+**Citations:** [https://discountingcashflows.com/company/IBKR/transcripts/](https://discountingcashflows.com/company/IBKR/transcripts/) (2025)
+
+### 15) Unquestionable Integrity
+**Question:** Does the company have a management of unquestionable integrity?
+**Reasoning & Evidence:** The company's 2024 10-K discloses several pending regulatory inquiries and legal proceedings, which are not uncommon in the highly regulated brokerage industry. However, the concentration of voting power with the founder and Chairman, Thomas Peterffy, and his position as Chairman of the Compensation Committee, raises corporate governance questions. While there are no major integrity scandals, the governance structure is not ideal from an independent shareholder perspective.
+**Answer:** No
+**Citations:** [https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm](https://www.sec.gov/Archives/edgar/data/1381197/000138119725000036/ibkr-20241231x10k.htm) (December 31, 2024)
+
+---
+**Synthesis:**
+Interactive Brokers scores well on Fisher's checklist, particularly in areas related to its product runway, technological prowess, high profit margins, and long-term focus. The company's core strengths are its highly automated, low-cost platform and its continuous innovation, which drives strong, profitable growth. The primary weaknesses identified are concentrated in corporate governance and management structure. The founder's overwhelming voting control and potential conflicts of interest on the compensation committee, combined with a lack of disclosed management depth and succession planning, are significant red flags from a Fisher perspective. The absence of a traditional sales force is a business model choice that has been effective but diverges from Fisher's ideal. Over the next 12-24 months, the score could be most influenced by changes in the competitive landscape, particularly if competitors begin to effectively replicate IBKR's low-cost, high-tech model. A "No" on management depth and integrity could flip to "Yes" with evidence of a formal succession plan, a more independent board structure, and the separation of the Chairman and compensation committee head roles.
+
+**fisher score is 11 / 15**
