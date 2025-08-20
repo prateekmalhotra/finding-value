@@ -15,14 +15,13 @@ from dotenv import load_dotenv
 from finding_value.valuation import analyze_stock_valuation, analyze_qualitative_aspects, analyze_catalysts, analyze_fisher_qs
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive.file"]
-SPREADSHEET_NAME = "bullpen"
+SPREADSHEET_NAME = "bullpen-2.0"
 MARGIN_OF_SAFETY = 0.30
 
 def get_company_name(ticker: str) -> str | None:
     """Fetches the long name of a company as a string."""
     try:
         stock = yf.Ticker(ticker)
-        # Access the 'longName' key from the info dictionary
         name = stock.info.get('longName')
         return name if name else None
     except Exception as e:
@@ -60,7 +59,6 @@ def get_current_price(ticker) -> float | None:
 def parse_price_from_string(price_str: str) -> float | None:
     """Extracts a float value from a string (e.g., "-25 $" -> -25.0)."""
     if not price_str: return None
-    # FIX: The regex now looks for an optional hyphen '-?' at the beginning.
     match = re.search(r'(-?\d+\.?\d*)', price_str)
     return float(match.group(1)) if match else None
 
@@ -84,17 +82,11 @@ def set_conditional_formatting(worksheet):
 
     print("No existing rules found. Adding new formatting rules...")
     
-    # --- FIX 1: Changed endColumnIndex from 7 to 9 ---
-    # This will apply the formatting to all 9 columns (A through I).
+    # Adjusted endColumnIndex to 11 to cover all columns A through K
     add_requests = [
-        # Rule 1 (Index 0): RED for overvalued (Current Value > 30% above Fair Value)
-        {"addConditionalFormatRule": {"rule": {"ranges": [{"sheetId": worksheet.id, "startRowIndex": 1, "endRowIndex": 1000, "startColumnIndex": 0, "endColumnIndex": 11}], "booleanRule": {"condition": {"type": "CUSTOM_FORMULA", "values": [{"userEnteredValue": "=AND(ISNUMBER($B2), ISNUMBER($C2), $B2 > $C2 * 1.3)"}]}, "format": {"backgroundColor": {"red": 0.95, "green": 0.81, "blue": 0.81}}}}, "index": 0}},
-        
-        # Rule 2 (Index 1): GREEN for good value (Current Value < Entry Point)
-        {"addConditionalFormatRule": {"rule": {"ranges": [{"sheetId": worksheet.id, "startRowIndex": 1, "endRowIndex": 1000, "startColumnIndex": 0, "endColumnIndex": 11}], "booleanRule": {"condition": {"type": "CUSTOM_FORMULA", "values": [{"userEnteredValue": "=AND(ISNUMBER($B2), ISNUMBER($D2), $B2 < $D2)"}]}, "format": {"backgroundColor": {"red": 0.81, "green": 0.92, "blue": 0.79}}}}, "index": 1}},
-        
-        # Rule 3 (Index 2): YELLOW for neutral/fair price (catches everything not red or green)
-        {"addConditionalFormatRule": {"rule": {"ranges": [{"sheetId": worksheet.id, "startRowIndex": 1, "endRowIndex": 1000, "startColumnIndex": 0, "endColumnIndex": 11}], "booleanRule": {"condition": {"type": "CUSTOM_FORMULA", "values": [{"userEnteredValue": "=ISNUMBER($B2)"}]}, "format": {"backgroundColor": {"red": 1, "green": 0.94, "blue": 0.8}}}}, "index": 2}}
+        {"addConditionalFormatRule": {"rule": {"ranges": [{"sheetId": worksheet.id, "startRowIndex": 1, "endRowIndex": 1000, "startColumnIndex": 0, "endColumnIndex": 14}], "booleanRule": {"condition": {"type": "CUSTOM_FORMULA", "values": [{"userEnteredValue": "=AND(ISNUMBER($B2), ISNUMBER($C2), $B2 > $C2 * 1.3)"}]}, "format": {"backgroundColor": {"red": 0.95, "green": 0.81, "blue": 0.81}}}}, "index": 0}},
+        {"addConditionalFormatRule": {"rule": {"ranges": [{"sheetId": worksheet.id, "startRowIndex": 1, "endRowIndex": 1000, "startColumnIndex": 0, "endColumnIndex": 14}], "booleanRule": {"condition": {"type": "CUSTOM_FORMULA", "values": [{"userEnteredValue": "=AND(ISNUMBER($B2), ISNUMBER($D2), $B2 < $D2)"}]}, "format": {"backgroundColor": {"red": 0.81, "green": 0.92, "blue": 0.79}}}}, "index": 1}},
+        {"addConditionalFormatRule": {"rule": {"ranges": [{"sheetId": worksheet.id, "startRowIndex": 1, "endRowIndex": 1000, "startColumnIndex": 0, "endColumnIndex": 14}], "booleanRule": {"condition": {"type": "CUSTOM_FORMULA", "values": [{"userEnteredValue": "=ISNUMBER($B2)"}]}, "format": {"backgroundColor": {"red": 1, "green": 0.94, "blue": 0.8}}}}, "index": 2}}
     ]
 
     body = {"requests": add_requests}
@@ -145,71 +137,87 @@ def main():
             if ticker in all_tickers_in_sheet:
                 print(f"--- Skipping {ticker}, as it is already in the sheet. ---")
                 continue
-
-            print(f"\n--- Processing {ticker} ---")
-            company_name = get_company_name(ticker)
             
-            print(f"Analyzing valuation for {ticker}...")
-            analysis_result = analyze_stock_valuation(ticker, company_name)
-            valuation_reasoning = analysis_result.get("reasoning", "No reasoning provided.")
-            
-            print(f"Analyzing moat for {ticker}...")
-            qualitative_result = analyze_qualitative_aspects(ticker, company_name)
-            moat_rating = qualitative_result.get("final_answer", "N/A")
-            moat_reasoning = qualitative_result.get("reasoning", "No reasoning provided.")
+            # **MODIFICATION**: This entire block handles one ticker. If any step fails,
+            # it raises an exception, which is caught below, and we `continue` to the next ticker.
+            try:
+                print(f"\n--- Processing {ticker} ---")
+                company_name = get_company_name(ticker)
+                if not company_name:
+                    raise ValueError("Could not fetch company name.")
 
-            print(f"Analyzing catalyst for {ticker}...")
-            catalyst_result = analyze_catalysts(ticker, company_name)
-            catalyst_rating = catalyst_result.get("final_answer", "N/A")
-            catalyst_reasoning = catalyst_result.get("reasoning", "No reasoning provided.")
+                # --- Step 1: Valuation ---
+                print(f"Analyzing valuation for {ticker}...")
+                analysis_result = analyze_stock_valuation(ticker, company_name)
+                fair_value_val = parse_price_from_string(analysis_result.get("final_answer"))
+                valuation_reasoning = analysis_result.get("reasoning", "No reasoning provided.")
+                if fair_value_val is None or valuation_reasoning == "NO RESPONSE":
+                    raise ValueError("Valuation analysis failed or returned incomplete data.")
 
-            print(f"Analyzing fisher qualitiative checklist for {ticker}...")
-            fisher_result = analyze_fisher_qs(ticker, company_name)
-            fisher_rating = fisher_result.get("final_answer", "N/A")
-            fisher_reasoning = fisher_result.get("reasoning", "No reasoning provided.")
+                # --- Step 2: Moat ---
+                print(f"Analyzing moat for {ticker}...")
+                qualitative_result = analyze_qualitative_aspects(ticker, company_name)
+                moat_rating = qualitative_result.get("final_answer", "N/A")
+                moat_reasoning = qualitative_result.get("reasoning", "No reasoning provided.")
+                if moat_rating == "N/A" or moat_reasoning == "NO RESPONSE":
+                    raise ValueError("Moat analysis failed or returned incomplete data.")
 
-            print(f"Fetching current price for {ticker}...")
-            current_price_val = get_current_price(ticker)
-            
-            fair_value_val = parse_price_from_string(analysis_result.get("final_answer"))
-            
-            entry_point_val = None
-            if fair_value_val is not None:
+                # --- Step 3: Catalysts ---
+                print(f"Analyzing catalyst for {ticker}...")
+                catalyst_result = analyze_catalysts(ticker, company_name)
+                catalyst_rating = catalyst_result.get("final_answer", "N/A")
+                catalyst_reasoning = catalyst_result.get("reasoning", "No reasoning provided.")
+                if catalyst_rating == "N/A" or catalyst_reasoning == "NO RESPONSE":
+                    raise ValueError("Catalyst analysis failed or returned incomplete data.")
+                
+                # --- Step 4: Fisher Checklist ---
+                print(f"Analyzing fisher qualitative checklist for {ticker}...")
+                fisher_result = analyze_fisher_qs(ticker, company_name)
+                fisher_rating = fisher_result.get("final_answer", "N/A")
+                fisher_reasoning = fisher_result.get("reasoning", "No reasoning provided.")
+                if fisher_rating == "N/A" or fisher_reasoning == "NO RESPONSE":
+                    raise ValueError("Fisher analysis failed or returned incomplete data.")
+
+                # --- Step 5: Price & Final Calculations ---
+                print(f"Fetching current price for {ticker}...")
+                current_price_val = get_current_price(ticker)
+                if current_price_val is None:
+                    raise ValueError("Could not fetch current price.")
+                
                 entry_point_val = fair_value_val * (1 - MARGIN_OF_SAFETY)
 
-            new_row = [
-                ticker, 
-                current_price_val, 
-                fair_value_val,    
-                entry_point_val,
-                moat_rating,
-                catalyst_rating,
-                fisher_rating
-                valuation_reasoning,
-                moat_reasoning,
-                catalyst_reasoning,
-                fisher_reasoning
-            ]
-            
-            value_input_option = 'USER_ENTERED'
-            
-            try:
-                row_index = all_tickers_in_sheet.index(ticker) + 1
-                # --- FIX 2: Changed update range from G to I ---
-                # This ensures all 9 columns are updated for existing rows.
-                worksheet.update(f'A{row_index}:I{row_index}', [new_row], value_input_option=value_input_option)
-                print(f"✅ Successfully updated row for {ticker}.")
-            except ValueError:
+                # --- All checks passed, prepare and write the row ---
+                new_row = [
+                    ticker, 
+                    current_price_val, 
+                    fair_value_val,    
+                    entry_point_val,
+                    moat_rating,
+                    catalyst_rating,
+                    fisher_rating,
+                    valuation_reasoning,
+                    moat_reasoning,
+                    catalyst_reasoning,
+                    fisher_reasoning
+                ]
+                
+                value_input_option = 'USER_ENTERED'
+                
                 worksheet.append_row(new_row, value_input_option=value_input_option)
                 all_tickers_in_sheet.append(ticker)
                 print(f"✅ Successfully added new entry for {ticker}.")
-            
-            time.sleep(1) 
+                
+                time.sleep(1) 
+
+            except Exception as e:
+                # This block catches ANY failure from the 'try' block above.
+                print(f"❌ Failed processing {ticker}: {e}. Skipping to next stock.")
+                continue # Move to the next ticker in the list
 
         print(f"\n🎉 All stocks have been processed and updated in '{SPREADSHEET_NAME}'.")
 
     except Exception as e:
-        print(f"\n❌ An error occurred: {e}")
+        print(f"\n❌ A critical error occurred: {e}")
 
 
 if __name__ == "__main__":

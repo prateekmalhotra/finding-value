@@ -30,26 +30,129 @@ def analyze_stock_valuation(stock_name: str, company_name: str) -> dict:
 	# This is done once in main, but kept here for potential standalone use
 	if not os.getenv("GOOGLE_API_KEY"):
 		load_dotenv()
-		
-	prompt = f"""Do back of the envelope valuation for {stock_name.upper()} stock. Company name: {company_name}. Please keep it simple to understand and your final answer should be fair value / share. Be a little pessimistic in your assumptions.
 
-	Use internet search: SEC filings, news, earnings calls, issued guidances, and historical data to guide your decisions. Focus more on recent information & don't use valuation techniques that rely on revenue multiples because what we need to focus on are the earnings, in case you can't estimate earnings - estimate margin and multiply that to projected revenue.
+	prompt = f"""
+ROLE: Conservative valuation analyst performing a back-of-the-envelope intrinsic valuation using only primary sources and management commentary.
 
-Remember to use company guidances and management projections / comments from most recent earnings call. Do not use anything from analysts they are fucking stupid. Use things said by management. Please give all the steps in the calculation. Make sure your final value accounts for company debt: so subtract net debt from final value. Make sure all numbers you use in calculations are accurate: shares outstanding, debt, cash, revenue, etc.
+COMPANY: {company_name} ({stock_name.upper()})
 
-The P/E ratio or discount % you use for discounted cash flow projection, keep it on the more conservative side. Overall keep valuation conservative but still realistic. Like Peter Lynch said, only if a company growing at 20% EPS YoY it should get PE of 20.
+OBJECTIVE
+Estimate a conservative intrinsic value per share using a transparent, step-by-step approach. The model must be simple enough to audit but rigorous in sourcing. Prefer understatement over optimism.
 
-Some resources you can use to make sure all numbers you use are absolutely accurate. It is very important that they are 100% accurate:
+DATA SOURCES (IN ORDER OF PRECEDENCE)
+1) Latest SEC filings (10-K/20-F, 10-Q, 8-K), annual report, and investor presentation.
+2) Most recent earnings call transcript and prepared remarks (management guidance only).
+3) Company IR releases and fact sheets.
+4) Reputable regulatory filings (e.g., prospectuses), credit agreements, and notes to financial statements.
+5) Good resources like:
+	https://stockanalysis.com/stocks/{stock_name}/
+	https://stockanalysis.com/stocks/{stock_name}/financials/?p=quarterly
+	https://stockanalysis.com/stocks/{stock_name}/financials/balance-sheet/?p=quarterly
+	https://stockanalysis.com/stocks/{stock_name}/financials/cash-flow-statement/?p=quarterly
+	https://discountingcashflows.com/company/{stock_name}/transcripts/
 
-https://stockanalysis.com/stocks/{stock_name}/
-https://stockanalysis.com/stocks/{stock_name}/financials
-https://stockanalysis.com/stocks/{stock_name}/financials/balance-sheet
-https://stockanalysis.com/stocks/{stock_name}/financials/cash-flow-statement
-https://discountingcashflows.com/company/{stock_name}/transcripts/
+IGNORE: sell-side/consensus/third-party estimates, blogs, social media. If a number cannot be corroborated in primary materials, do not use it.
 
-Use GAAP guidances and numbers wherever possible. For non-GAAP stuff, please convert to GAAP first.
+IF SOME RESOURCE IS MISSING OR BROWSE TOOL ISN'T WORKING, DO NOT PANIC - USE OTHER REMAINING RESOURCES. BUT KEEP GOING DON'T STOP UNTIL YOU ARE CONFIDENT IN THE FINAL ANSWER.
 
-And the last line of the output should be: final answer is xyz $
+CITATIONS
+- Every number you use must be followed by a parenthetical citation with a working link and an absolute date, e.g., (10-Q, May 7, 2025, p. 12).
+- If you infer a number (e.g., run-rate, TTM), show the math and cite the source of each input.
+- Do not cite undated or ambiguous sources.
+
+UNITS, CURRENCY, DATES
+- State reporting currency clearly (e.g., USD). Keep all figures in the same currency.
+- Use millions unless otherwise noted. Always include units.
+- Use absolute dates (e.g., “for the quarter ended June 30, 2025”).
+
+VALUATION FRAMEWORK (CONSERVATIVE)
+Perform all of the following and show each step, assumption, and formula:
+A) BASELINE FINANCIALS (TTM or LTM)
+   1) Revenue, gross margin, operating income (or EBIT), net income, depreciation & amortization, stock-based compensation, capex, change in working capital, interest expense, cash & equivalents, total debt (incl. current), lease liabilities (if material), minority interest, and diluted weighted-average shares. Show TTM where possible; otherwise use most recent annual and latest interim to bridge. Provide a small table with each line and a citation for each figure.
+
+B) MANAGEMENT GUIDANCE EXTRACTION
+   2) Extract verbatim key elements of current guidance: revenue growth, margin targets, capex outlook, cash taxes, working capital trends, and any segment guidance. Quote briefly and cite the source and date. If no guidance is given, say so and proceed conservatively.
+
+C) FORECAST HORIZON AND CONSERVATIVE ASSUMPTIONS (5 YEARS)
+   3) Forecast revenue for Years 1–5:
+      - Start from the lower end of management guidance or the most recent trailing run-rate, whichever is lower.
+      - If guidance is a range, use the low end.
+      - If no guidance, assume growth = min(last 3-year CAGR, inflation proxy) and justify.
+   4) Margin path:
+      - Use the lower of: (a) management margin guidance low end; (b) average of last 3 years; (c) last twelve months.
+      - For operating margin expansion, require a concrete, cited driver (pricing, mix, cost-out). If not found, keep margins flat or compress modestly.
+   5) Taxes:
+      - Use the higher of the recent effective tax rate and the statutory rate disclosed. Justify choice and cite.
+   6) Capital intensity:
+      - Capex: use the higher of (a) management capex guide, (b) last 3-year average as % of revenue, (c) LTM. Cite.
+      - Working capital: model as % of incremental revenue using the more conservative of recent history or guidance. If volatile, use a positive cash usage (i.e., working capital consumes cash).
+      - D&A: fade toward recent level unless explicit capacity additions justify growth. Cite.
+      - Leases: if material, treat lease repayments akin to debt service; reflect in FCFF or adjust to FCFE consistently.
+   7) SBC and dilution:
+      - Treat SBC as a real economic cost. Either subtract SBC from FCFF or model future diluted shares using the higher of: (a) LTM diluted shares; (b) basic shares plus in-the-money options/RSUs from the filing. Explain approach and cite.
+
+D) FREE CASH FLOW CONSTRUCTION
+   8) Define and compute FCFF each year (operating income * (1 - tax rate) + D&A - capex - change in working capital). Show the exact formula and each input with references.
+   9) Cross-check FCFE if helpful (FCFF - after-tax interest + net borrowing - lease principal - minority distributions). State which metric you use for valuation and why.
+
+E) DISCOUNT RATE (CONSERVATIVE)
+  10) Cost of equity via CAPM:
+      - Risk-free rate: use latest sovereign yield matching currency/tenor (e.g., 10-year U.S. Treasury). Cite date and source.
+      - Equity risk premium: use a conservative range (e.g., 5.5%–6.5%); pick the higher bound and justify.
+      - Beta: if not available from filings, infer a conservative beta of at least 1.0 unless a regulated/contracted profile is clearly evidenced. Explain rationale.
+  11) Cost of debt: infer from interest expense / average debt or disclosed rates; add a conservative spread if necessary. Cite.
+  12) WACC: compute using conservative weights (treat off-balance sheet leases as debt where material). Show formula and numbers.
+
+F) TERMINAL VALUE (MODEST)
+  13) Use the Gordon Growth method with terminal growth g capped at the lower of long-run inflation and real GDP for the reporting region; do not exceed the current risk-free rate minus 1%. Justify and cite macro source.
+  14) As a cross-check, compute an exit multiple on Year 5 EBIT or EBITDA using a multiple below the 10-year sector median. Cite the sector median source and haircut rationale.
+
+G) ENTERPRISE TO EQUITY BRIDGE
+  15) Add: present value of explicit period FCFF + present value of terminal value = Enterprise Value.
+  16) Subtract: net debt (debt + lease liabilities - cash and short-term investments), minority interest; add: non-core investments if clearly marked and liquid (haircut 25% by default unless market value is observable). Cite each figure.
+  17) Make sure to account for **excess cash** or **excess debt** after everything is included in the bridge.
+
+H) PER-SHARE VALUE AND MARGIN OF SAFETY
+  18) Divide by a conservative diluted share count (use the higher figure as per SBC treatment).
+  19) Report a valuation range:
+      - Low (use lower revenue, flat margins, higher capex/WACC).
+      - Base (guided low-end inputs).
+      - High (only if explicitly justified by guidance; still conservative).
+  20) Compute an explicit Margin of Safety (MOS) price at 25–30% below the LOW estimate.
+  21) If you reference the current share price, cite an official exchange or the company IR page with timestamp; otherwise, omit.
+
+DECISION RULES & CONSERVATISM
+- When in doubt, choose the more conservative input.
+- Do not count cost savings or synergies without specific, dated management disclosure.
+- Do not assume buybacks beyond what’s already executed.
+- Do not assume multiple expansion; if anything, apply a haircut.
+- If any critical input is missing, disclose the gap and proceed with a clearly conservative proxy (and label it).
+
+OUTPUT FORMAT (MARKDOWN)
+1) Header: Company, ticker, currency, date of analysis, primary sources reviewed (bullet list with links and dates).
+2) Baseline Financials (TTM): a compact table with each line item, value, unit, and citation.
+3) Guidance Extracts: short quoted bullets with citations.
+4) Forecast & Assumptions: list each assumption with a one-sentence rationale and a citation for the source input.
+5) Free Cash Flow Build: show formulas year by year (Y1–Y5) and a mini table of FCFF.
+6) Discount Rate: show risk-free, ERP, beta, cost of equity, cost of debt, WACC with formulas and citations.
+7) Terminal Value: show method, inputs, and calculation, plus exit multiple cross-check and rationale.
+8) Enterprise to Equity Bridge: bullet the adjustments with numbers and citations.
+9) Per-Share Valuation: show Low/Base/High and the MOS price. If current price included, cite it and compute % upside/downside.
+10) One-paragraph Risk Notes: list 3–5 key downside risks tied to your assumptions.
+11) Final line must be: "final answer is XYZ $" where XYZ is the conservative per-share intrinsic value you estimate.
+
+CHECKLIST BEFORE YOU SUBMIT
+- Every numeric input has a citation with a link and an absolute date.
+- All formulas are written out and every step is shown.
+- Currency and units are consistent.
+- Terminal growth is modest and justified.
+- WACC components are transparent and conservative.
+- SBC is treated as a real cost or dilution is explicitly modeled.
+- No analyst/consensus numbers were used.
+- Excess cash or excess debt adjustments are clearly accounted for.
+- Remember that the last line of your output should be - final answer is XYZ $ where XYZ is the conservative per-share intrinsic value you estimate
+
+Now begin the analysis for {company_name} ({stock_name.upper()}) following the exact structure above. Be explicit, concise, and conservative.
 """
 
 	try:
@@ -64,10 +167,11 @@ And the last line of the output should be: final answer is xyz $
 
 
 		config = types.GenerateContentConfig(
-			tools=[grounding_tool, url_context_tool]
+			tools=[grounding_tool, url_context_tool],
+			thinking_config=types.ThinkingConfig(thinking_budget=-1)
 		)
 
-		response = client.models.generate_content(model="gemini-2.5-pro", contents=prompt, config=config)
+		response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=config)
 		full_response_text = response.text
 
 		analysis_result = {
@@ -92,7 +196,7 @@ And the last line of the output should be: final answer is xyz $
 	except Exception as e:
 		print(f"An error occurred while communicating with the Gemini API: {e}")
 		return {
-			"reasoning": f"Error during analysis for {stock_name}: {e}",
+			"reasoning": "NO RESPONSE",
 			"final_answer": None
 		}
 
@@ -109,44 +213,131 @@ def analyze_qualitative_aspects(stock_name: str, company_name: str) -> dict:
 		load_dotenv()
 		
 	prompt = f"""
-    Analyze the qualitative aspects and economic moat of {stock_name.upper()}. Company name: {company_name}.
-    Your goal is to determine the durability and strength of the company's competitive advantages.
+ROLE: Senior competitive strategy & equity analyst tasked with rigorously assessing the COMPANY’S SUSTAINABLE COMPETITIVE ADVANTAGE ("moat").
 
-    Use internet search on official sources like SEC filings (especially the 'Business' and 'Risk Factors' sections of the latest 10-K), recent earnings call transcripts, and official company press releases.
+COMPANY: {company_name} ({stock_name.upper()})
+OBJECTIVE
+Produce a disciplined, evidence-first moat assessment for {company_name} ({stock_name.upper()}) that results in a single, defensible moat score on a 0–5 scale. Be conservative, transparent, and explicit about every step, data source, and assumption. The final output must end with the exact line:
 
-    Based on your analysis, provide a clear reasoning for the strength of the moat. Be as descriptive as possible. First talk about the business itself.
+    moat rating is X / 5
 
-    To identify the moat, consider these factors:
-    1.  **Intangible Assets:** Brand recognition, patents, regulatory licenses. Does the company have a brand that commands pricing power?
-    2.  **Switching Costs:** Are customers locked into the company's ecosystem? How difficult or expensive is it for customers to switch to a competitor?
-    3.  **Network Effects:** Does the product or service become more valuable as more people use it? (e.g., social media, marketplaces).
-    4.  **Cost Advantages:** Can the company produce its goods or services at a lower cost than competitors due to scale, process, or location?
+DATA SOURCES (PRIORITIZE IN THIS ORDER)
+1) Latest SEC filings (10-K/20-F, 10-Q, 8-K), annual report, and investor presentation.  
+2) Latest earnings call transcript and management prepared remarks (use only management-sourced claims for forward-looking statements).  
+3) Company investor-relations releases, statutory filings in primary listing jurisdiction, regulatory documents, credit agreements, and audited financial statements.  
+4) High-quality third-party sources (e.g., industry reports, government statistics) only to contextualize; primary evidence must be used for company-specific claims.
 
-    Give reasoning for all points and do an indepth web search until you are confident in your answers.
+EVIDENCE STANDARD
+- **Every factual claim must include a dated citation** (link + document title + absolute date). E.g., (10-K, Feb 25, 2025).  
+- **No hallucinations.** If a claim cannot be supported by documented evidence, explicitly label it as an inference, show the inference steps, and use conservative assumptions.  
+- Use absolute dates and currencies. All monetary figures must specify units (e.g., "USD, millions").
 
-    Finally, rate the company's moat on a scale of 1 to 5.
-    - **1/5:** No discernible moat. Highly competitive industry.
-    - **3/5:** A moderate, identifiable moat that may be weakening or not yet proven durable.
-    - **5/5:** A wide, deep, and durable moat. These are exceptional businesses that can fend off competition and sustain high returns on capital for decades (e.g., Moody's, Coca-Cola).
+TIME HORIZON
+- Assess durability over a 5–15 year horizon. Provide an explicit **estimated moat duration** in years and justify it with evidence.
 
-    A good starting point:
+ANALYTIC FRAMEWORK — DIMENSIONS TO EVALUATE (SCORE EACH 0–5)
+Score each dimension on a 0–5 integer scale, where 0 = no advantage / actively losing ground; 5 = extremely durable, demonstrable advantage likely to persist for >15 years. For each dimension you must:
+- Give 2–4 sentences of reasoning.
+- Provide 1–3 dated citations that directly support the reasoning.
+- State the numeric score for that dimension.
 
-    https://stockanalysis.com/stocks/{stock_name}/
+Dimensions (evaluate all; these are exhaustive but adapt evidence to industry specifics):
 
-    Resources to use for earnings calls:
+1) Network Effects (weight 18%)
+   - Evidence: growth & density of user base, marginal utility of adding users, cross-side network measurements (GMV/user, DAU/MAU trends), organic viral coefficients.
+   - Metrics to cite: active users (DAU/MAU), growth rates, % of engagement attributable to network interactions, third-party adoption rates.
 
-    https://discountingcashflows.com/company/{stock_name}/transcripts/
+2) Switching Costs (weight 15%)
+   - Evidence: contractual lock-in (multi-year contracts, termination penalties), technical lock-in (integration depth, API adoption), behavioral lock-in (data migration costs, training).
+   - Metrics: average contract length, churn rates, net retention, documented customer migration costs.
 
-    Resources for any recent developments:
+3) Cost Advantage / Unit Cost Leadership (weight 15%)
+   - Evidence: demonstrable per-unit cost below peers (COGS per unit, fulfillment cost per order), proprietary low-cost inputs, proprietary manufacturing process, favorable supplier contracts.
+   - Metrics: gross margin differential vs peer median, costs per unit, scale economics disclosures.
 
-    Use seekingalpha and reddit to look for any meaningful discussions around this topic
-    Use news websites to find any developments in the sector that could inform more about this topic
+4) Intangible Assets / Brand / IP (weight 12%)
+   - Evidence: registered patents (with expiry), trademarks, brand strength (price premium evidence), exclusivity agreements, regulatory exclusivity (data exclusivity, orphan drug status).
+   - Metrics: patent counts + key patent expiry dates, price premium vs nearest competitor, brand awareness studies if cited.
 
-    Remember to cite your sources.
+5) Distribution & Efficient Scale (weight 10%)
+   - Evidence: exclusive shelf placements, dense physical network, logistics footprint that makes entry unattractive, limited market segments where only a few players operate profitably.
+   - Metrics: store/warehouse density, geographic coverage maps, shelf-share data, unit economics by region.
 
-    Provide your reasoning first, and ensure the very last line of your entire output is in the following format:
-    moat rating is x / 5
-    """
+6) Data Advantage (weight 10%)
+   - Evidence: unique, hard-to-replicate datasets; dataset breadth/depth; clear feedback loop where data improves product & increases retention; data scale & recency.
+   - Metrics: size of datasets, frequency of updates, citations of data-driven product improvements.
+
+7) Ecosystem / Platform Effects (weight 8%)
+   - Evidence: third-party developer adoption, complementary product marketplace, number of integrations, partner stickiness.
+   - Metrics: number of third-party apps/integrations, revenue mix from ecosystem services, developer activity levels.
+
+8) Regulatory / Legal Barriers (weight 6%)
+   - Evidence: licenses, spectrum ownership, government contracts, regulatory approvals, tariffs or trade protections that limit competitors.
+   - Metrics: list of licenses and expiry dates, regulatory rulings, material compliance constraints.
+
+9) Capital Intensity & Asset Specificity (weight 4%)
+   - Evidence: sunk costs required to compete (plants, heavy capex, exclusive equipment), lead times to replicate assets, deterrent effect on new entrants.
+   - Metrics: capex as % of revenue, lead times, specialized equipment counts.
+
+10) Customer Contracts & Revenue Visibility (weight 2%)
+   - Evidence: % recurring revenue, duration and renewal rates of contracts, backlog or contracted ARR/RPO.
+   - Metrics: % recurring, contract duration, renewal statistics.
+
+SCORING METHODOLOGY
+1. For each dimension: produce a score 0–5 (integer), with reasoning and citations.  
+2. Compute a **weighted score** = sum(score_dim * weight_dim). Weights above are the default; if industry-specific rationale requires different weights, explicitly justify any deviations and show both default and adjusted weighted results.  
+3. Convert weighted score (0–100) to a 0–5 moat rating using conservative thresholds:
+
+   - Weighted ≥ 85 → moat rating = 5  
+   - 70 ≤ Weighted < 85 → moat rating = 4  
+   - 50 ≤ Weighted < 70 → moat rating = 3  
+   - 30 ≤ Weighted < 50 → moat rating = 2  
+   - 10 ≤ Weighted < 30 → moat rating = 1  
+   - Weighted < 10 → moat rating = 0
+
+4. Report both the **numeric weighted score** (e.g., 72.4 / 100) and the **final integer moat rating** (0–5). The final line must be exactly:
+
+    moat rating is X / 5
+
+OUTPUT FORMAT (STRICT — MARKDOWN)
+1) Header line: Company, ticker, currency, date of analysis, primary sources reviewed (bulleted list of links + absolute dates).  
+2) One-line summary: proposed moat rating and estimated duration in years (e.g., "Preliminary moat rating: 3 / 5; estimated durability: ~7–10 years"). (This is a preface — still justify below.)  
+3) Table: Dimensions, weight %, raw score (0–5), weighted contribution. (Show numeric computation for each.)  
+4) For each dimension (1–10):  
+   - **Reasoning (2–4 sentences)** — be explicit and conservative.  
+   - **Evidence (1–3 bullets)** — each with citation (document title/link + absolute date).  
+   - **Score:** N / 5.  
+5) Aggregation: show weighted sum calculation and final weighted numeric score out of 100.  
+6) Mapping: show how the numeric weighted score maps to the 0–5 final moat rating (per thresholds above).  
+7) Moat duration justification: 2–3 sentences estimating years of durability and key expiry events (patent expiry, contract expiration, regulation reviews) with citations and dates.  
+8) Top 3 moat erosion scenarios (each 1–2 sentences with a citation if available).  
+9) KPIs to monitor (5–8 specific metrics, what direction indicates erosion vs strengthening).  
+10) Short verdict paragraph (3–5 sentences) that ties together why the assigned rating is appropriate and which evidence would flip the rating.  
+11) Final mandatory line (single line):  
+
+    moat rating is X / 5
+
+DECISION RULES & CONSERVATISM
+- If evidence is mixed, err **downward**. Document the mixed evidence and why the conservative choice was made.  
+- Do not use market/analyst narratives as primary evidence. Use them only for context and always label them as third-party commentary.  
+- If a dimension lacks direct company-level evidence, do not invent numbers — either use conservative proxies (explicitly show the proxy and the justification) or score the dimension lower.  
+- When citing patents or regulatory exclusivity, include expiry dates and legal jurisdiction.
+
+CHECKLIST BEFORE SUBMITTING
+- Every factual sentence that asserts a measurable fact has at least one dated citation.  
+- Dimension scores are integers 0–5 and each has explicit evidence and reasoning.  
+- Weighted contributions are computed and shown numerically.  
+- Moat duration is estimated and justified with dates.  
+- Final line is exactly: moat rating is X / 5
+
+EXAMPLE OUTPUT (short illustration, do not copy for final):
+- Header: {company_name} ({stock_name.upper()}), USD, Analysis date: May 7, 2025. Sources: (10-K, Feb 25, 2025), (Q1 shareholder letter, Apr 30, 2025).  
+- One-line summary: Preliminary moat rating: 3 / 5; estimated durability: 7–10 years.  
+- ... [full breakdown per dimension] ...  
+- Final line (exact): moat rating is 3 / 5
+
+Begin the assessment for {company_name} ({stock_name.upper()}) using the exact structure above. Be rigorous, conservative, and cite everything.
+"""
 
 	try:
 		client = genai.Client()
@@ -160,10 +351,11 @@ def analyze_qualitative_aspects(stock_name: str, company_name: str) -> dict:
 
 
 		config = types.GenerateContentConfig(
-			tools=[grounding_tool, url_context_tool]
+			tools=[grounding_tool, url_context_tool],
+			thinking_config=types.ThinkingConfig(thinking_budget=-1)
 		)
 
-		response = client.models.generate_content(model="gemini-2.5-pro", contents=prompt, config=config)
+		response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=config)
 		full_response_text = response.text
 
 		analysis_result = {
@@ -188,7 +380,7 @@ def analyze_qualitative_aspects(stock_name: str, company_name: str) -> dict:
 	except Exception as e:
 		print(f"An error occurred while communicating with the Gemini API: {e}")
 		return {
-			"reasoning": f"Error during analysis for {stock_name}: {e}",
+			"reasoning": "NO RESPONSE",
 			"final_answer": None
 		}
 
@@ -205,38 +397,87 @@ def analyze_catalysts(stock_name: str, company_name: str) -> dict:
 		load_dotenv()
 		
 	prompt = f"""
-Analyze the near-term and long-term catalysts for {stock_name.upper()} stock. Company name: {company_name}. Your analysis should be a comprehensive research effort into events and factors that could materially impact the company's value.
+ROLE: Catalyst strategist and equity analyst. Be an evidence-first investigator focused on identifying **near-term (0–12 months)** and **long-term (12–60 months)** catalysts that could plausibly drive the share price of {company_name} ({stock_name.upper()}) materially higher. Your work must be conservative, fully transparent, and auditable.
 
-Use internet search: SEC filings (especially recent 10-Ks, 10-Qs, and Form 4s), news, earnings call transcripts, investor presentations, and company press releases. You must also consider the broader industry trends and economic cycles affecting the business.
+OBJECTIVE
+Produce a prioritized, quantified, and fully-cited catalogue of potential catalysts (both positive catalysts and their key downside/anti-catalysts). For each catalyst you must show the mechanism by which the event could move the stock, provide an estimated timing window, a numeric estimate of potential impact (range), and a probability/confidence score. Emphasize corporate actions (buybacks, dividends, insider buying), operational and product catalysts, regulatory/approval events, large contract wins, partnerships, margin programs, and M&A — but include any other realistic drivers.
 
-Good place to start getting basic info: https://stockanalysis.com/stocks/{stock_name}/
+DATA SOURCES (ORDER OF PRECEDENCE)
+1) Primary company disclosures: SEC filings (10-K/20-F, 10-Q, 8-K), annual report, definitive proxy, investor presentations, and press releases.  
+2) Latest earnings call transcript and prepared management remarks (use only management-sourced forward guidance).  
+3) Regulatory filings (prospectuses, credit agreements, material contracts) and regulator decisions.  
+4) Exchange records for price/time if current market price is referenced.  
+5) High-quality news (Reuters, Bloomberg, WSJ) only to corroborate dates/announcements — never to replace primary filings.
 
-Insider buying can be found at: http://openinsider.com/search?q={stock_name}
+CITATION RULE (MANDATORY)
+- **Every numeric fact, date, share count, authorization amount, or direct quote must include a dated citation** with a working link and absolute date, e.g., (10-Q, Aug 7, 2025).  
+- If you infer a number (e.g., run-rate revenue), show the exact arithmetic and cite the input sources used.  
+- If a claim cannot be supported by primary documentation, explicitly label it as an inference, show the inference steps, and use conservative assumptions.
 
-Institutional buying info: https://whalewisdom.com/stock/{stock_name}
+DEFINITIONS
+- Near-term = 0–12 months. Long-term = 12–60 months.
+- Impact magnitude categories (use when estimating % price effect):  
+  - Small = ~0–10% price impact  
+  - Medium = ~10–30% price impact  
+  - Large = >30% price impact  
+  Justify any mapping from financial effect to price impact.
 
-company stock Buyback info: https://www.tipranks.com/stocks/{stock_name}/buybacks
+OUTPUT STRUCTURE (STRICT — MARKDOWN)
+1) **Header:** Company, ticker, reporting currency, date of analysis, list of primary sources reviewed (bulleted with link + absolute date).  
+2) **Top 3 Prioritized Catalysts (summary table)** — select the three catalysts that are (A) most likely, (B) highest expected impact, or (C) nearest-term. For each show: Catalyst title, Type, Timing window, Impact (Small/Medium/Large + % range), Probability (0–100%), and one-line evidence citation.  
+3) **Near-Term Catalysts (0–12 months)** — a numbered list. For each catalyst include the following labeled fields (exact order required):
 
-Your analysis must cover the following specific points:
+   - **Catalyst Title:**  
+   - **Type:** (Corporate action / Financial / Operational / Product / Regulatory / Partnership / M&A / Macro / Other)  
+   - **Description (1–2 sentences):** What is happening? Cite any announced amounts/dates.  
+   - **Mechanism:** Precisely explain *how* this event would lift the share price. Use valuation math where appropriate.  
+   - **Timing:** earliest possible date — latest plausible date (give absolute dates where possible). Cite source for dates.  
+   - **Quantification:** show a conservative numeric scenario (Low/Base/High) with arithmetic. Every number must be cited. Show your math step-by-step.  
+   - **Estimated Price Impact:** give a % range and explain basis. Be conservative.  
+   - **Probability / Confidence (0–100%)** and rationale with supporting evidence.  
+   - **Key Dependencies / Conditions:** what must happen for the catalyst to succeed.  
+   - **Monitoring Triggers / KPIs:** 3–5 things to watch and where to find them.  
+   - **Anti-Catalysts / Risks:** 1–3 reasons it could fail or be delayed.  
+   - **Suggested Investor Action:** (Buy / Watch / Avoid / Hedge) and rationale.
 
-1.  **Capital Allocation & Insider Confidence:**
-    * **Stock Buybacks:** Is the company actively repurchasing its own shares? Detail any announced buyback programs, their size, and recent activity.
-    * **Insider Buying & Selling:** Scrutinize recent Form 4 filings. Are key executives and directors net buyers or sellers of the stock? Significant open-market buys are a strong positive signal.
-    * **Insider Ownership:** What is the percentage of shares held by insiders? High ownership is a good sign of alignment with shareholders.
+4) **Long-Term Catalysts (12–60 months)** — same structure/fields as above but emphasizing strategic or structural events. Include multi-year P&L/FCF impact scenarios (conservative arithmetic) and valuation linkages.
 
-2.  **Business & Industry Catalysts:**
-    * **Near-Term (Next 6-12 Months):** Identify any upcoming product launches, expected regulatory approvals, major contract wins, cost-saving initiatives mentioned by management, or other specific events that could serve as a short-term catalyst.
-    * **Long-Term (1-5+ Years):** What are the major secular trends the company is poised to benefit from? Analyze its R&D pipeline, market expansion opportunities, and strategic positioning against competitors.
-    * **News & Market Sentiment:** Synthesize the tone of recent news coverage. Is the narrative around the company positive, negative, or neutral?
+5) **Prioritization & Scoring Table** — for all catalysts (near + long), produce a table with columns: ID, Title, Type, Timing (Near/Long), Impact Score (1–5), Probability Score (1–5), Expected Impact (% price range), Weighted Score = ImpactScore * ProbabilityScore. Sort descending by Weighted Score and show top 10.
 
-After presenting a detailed analysis covering these points, provide a final score reflecting the strength and likelihood of these catalysts positively impacting the stock.
+6) **Timeline / Gantt (concise)** — present a quarter-by-quarter timeline for the top 8 catalysts showing expected windows. Cite timing estimates.
 
-**Scoring Guide:**
-- **1/5:** Significant headwinds, negative insider signals, no clear catalysts.
-- **3/5:** A balanced outlook with some potential catalysts offset by risks or neutral insider activity.
-- **5/5:** Multiple, clear, and powerful catalysts on the horizon, backed by strong insider confidence (buybacks/buying) and positive industry trends.
+7) **Valuation Sensitivity Examples (short)** — pick 2 of the highest-priority catalysts and show a conservative valuation sensitivity with formulas and citations.
 
-Provide your reasoning first, and the very last line of your output must be in the following format:
+8) **Net Catalysts Balance & Short-Term Market Signal** — paragraph summarizing whether near-term catalysts are likely to produce positive stock performance in 0–12 months.
+
+9) **Evidence Matrix (required)** — a concise mapping: each citation used → which claims/fields it supports.
+
+10) **Three Highest-Risk Events That Could Negate All Catalysts** — 1–2 sentences each and citations.
+
+11) **Final Recommendation Paragraph (2–3 sentences)** — actionable conclusion referencing the top catalyst, the expected % upside range (conservative), and the single most important indicator to monitor.
+
+12) Give a final rating out of 5 based on all the information above.
+
+OUTPUT FORMAT RULES & DECISION GUIDANCE
+- Use primary sources for every number.  
+- Do not use sell-side/consensus estimates.  
+- Every number must be cited or labeled as an inference with conservative assumptions.  
+- Prioritization, timeline, and evidence matrix are mandatory.  
+- If a catalyst is speculative with no hard evidence, mark as low-probability and explain caveats.
+- Remember to have final line as - catalyst score is x / 5
+
+CHECKLIST BEFORE SUBMISSION
+- Every numeric input has a dated citation.  
+- Every inferred number shows arithmetic and sources.  
+- Each catalyst includes Timing, Mechanism, Quantification, Probability, Monitoring, and Risks.  
+- Prioritization table present and sorted.  
+- Final recommendation included.
+
+Be conservative and explicit at all times. It is better to be strict than lenient with these ratings. Only too good to be true cases should get 4 and above.
+
+Begin the analysis for {company_name} ({stock_name.upper()}).
+
+Final line of the output must read exactly:  
 catalyst score is x / 5
 """
 
@@ -251,10 +492,11 @@ catalyst score is x / 5
 		)
 
 		config = types.GenerateContentConfig(
-			tools=[grounding_tool, url_context_tool]
+			tools=[grounding_tool, url_context_tool],
+			thinking_config=types.ThinkingConfig(thinking_budget=-1)
 		)
 
-		response = client.models.generate_content(model="gemini-2.5-pro", contents=prompt, config=config)
+		response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=config)
 		full_response_text = response.text
 
 		analysis_result = {
@@ -279,7 +521,7 @@ catalyst score is x / 5
 	except Exception as e:
 		print(f"An error occurred while communicating with the Gemini API: {e}")
 		return {
-			"reasoning": f"Error during analysis for {stock_name}: {e}",
+			"reasoning": "NO RESPONSE",
 			"final_answer": None
 		}
 
@@ -300,7 +542,7 @@ Analyze the company **{company_name} ({stock_name.upper()})** using Fisher’s 1
 - Give concise reasoning grounded in verifiable evidence.
 - Cite specific sources (filings, earnings call transcripts, investor presentations, reputable news/trade sources, datasets) with working links and publication dates.
 - End each point with a forced **Answer: Yes/No** per the decision rules below.
-Finish with a fisher score out of 15.
+- Finish with a fisher score out of 15. 15 / 15 for all the best answers.
 
 CONSTRAINTS & QUALITY BAR
 - Use the **most recent** primary sources: latest annual/quarterly filings (10-K/20-F/10-Q), MD&A, earnings call transcripts, investor day decks. Supplement with major outlets (e.g., Bloomberg/Reuters/WSJ), respected trade journals, and credible third-party datasets (e.g., Statista can be cited if cross-checked).
@@ -318,7 +560,7 @@ DECISION RULES (apply to every point)
 OUTPUT FORMAT (Markdown)
 - Start with a one-line overview: “Company, date of analysis, primary sources reviewed.”
 - Then present each numbered point as shown below.
-- After point 15, include a fisher score line as: **fisher score is X / 15**.
+- After point 15, include a fisher score line as: fisher score is X / 15.
 - End with a one-paragraph synthesis highlighting what would most likely change the score in the next 12–24 months.
 
 FISHER’S 15 POINTS (use these exact headings)
@@ -396,7 +638,7 @@ FISHER’S 15 POINTS (use these exact headings)
 **Citations:** [...]
 
 13) Equity Financing Dilution Risk  
-**Question:** In the foreseeable future, will growth require such equity financing that dilution will largely cancel existing stockholders’ benefit from anticipated growth?  
+**Question:** Is the company's financial position strong enough to fund foreseeable growth without resorting to equity financing that would meaningfully dilute existing shareholders?
 **Reasoning & Evidence:** [Cash balance, FCF, leverage, access to debt, historical issuance/buybacks, shelf registrations, capital intensity, unit economics.]  
 **Answer:** Yes/No  
 **Citations:** [...]
@@ -423,7 +665,7 @@ CHECKLIST BEFORE YOU SUBMIT
 - Each point includes at least one **dated** citation with a working link.
 - Numbers have units, periods, and clear timeframes.
 - No speculative claims without sources; no generic platitudes.
-- Remember that the last line of your output should be - fisher score is x / 15
+- Remember that the last line of your output should be - fisher score is x / 15 (where x is the correct answer. So a great business will have 15 / 15)
 """	
 
 	try:
@@ -437,10 +679,11 @@ CHECKLIST BEFORE YOU SUBMIT
 		)
 
 		config = types.GenerateContentConfig(
-			tools=[grounding_tool, url_context_tool]
+			tools=[grounding_tool, url_context_tool],
+			thinking_config=types.ThinkingConfig(thinking_budget=-1)
 		)
 
-		response = client.models.generate_content(model="gemini-2.5-pro", contents=prompt, config=config)
+		response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=config)
 		full_response_text = response.text
 
 		analysis_result = {
@@ -465,7 +708,7 @@ CHECKLIST BEFORE YOU SUBMIT
 	except Exception as e:
 		print(f"An error occurred while communicating with the Gemini API: {e}")
 		return {
-			"reasoning": f"Error during analysis for {stock_name}: {e}",
+			"reasoning": "NO RESPONSE",
 			"final_answer": None
 		}
 
