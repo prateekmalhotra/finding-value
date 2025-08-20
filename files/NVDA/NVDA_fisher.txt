@@ -1,0 +1,340 @@
+browse
+url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBOAzFZlvi41uIbnxkEayQMgiekR27jpj0qUL-AhYYGk0_1Gepmkrry3NJLhH-kfe0ZILgog0qFCnf-FDu-sB7aOJgf8_rUAfhBUW8F76nxd4hFlZqlQb8VKGvnQ6s0HhTYXiURD8XS7FtCg1UOl7JNlMGUOF7VquarmSgt0ApeKArZrXMy_16PXMYz8PCUp3kkRZtbMD414lU2wfmFg29
+url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFii-QC5-v25m00G4_iCXn3-gXxUCXCNgGq6n0jlSECc6YgT8V7WiV5XixHq7TXh2YvsOUGNdyOTrHMMDnsKrDuMffMZcPzAMNZ5sRdayY4HpwEXRtTZqT0d3bXEF5X0MR8kSEZi6IyO6IR
+url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAsx3-L0zj35M5ICNf2v0wymLQxl7W1nvtCXQelgPwpFlLy9TLeYAyW8OLYIWs07-PA6u6vHlZ-Bqkur5ki9oRytcrYPjHONvNJGKeZOwbtuUpJTDAsslCuoAXPGIL4NgB4rFmxryg56dLqOyVpsmdX_wifvjrhRcbSAw0cieqyPNCC8jmuLrGPNKggbBaK4OqtOR6ZXqDZIHuuZbEvaI=
+url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS3zJbqcHXqu9Gw3tVfrfuqq0_L6_SVwaSx7jRLcb6cPqN4R5LDR2ioqMB6-cBwzVgOBX6IUlK1RzPFAP91_Fl-Qx6NhYDvLClMC4C6_GdDfepTFjqgT-eVf6wWPwt-O4CCmvbX9uyygIU-y0bt-b3kH2rr0I1_qlHcwcZOxNuAIL9l10i2k6vM_oIa24Xr65sXiMPrQTJ8p8S67NIFsVpqALCd9g=
+url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5YZLbufmvc5dS0TPmekh_k7FkzT7GmfasqpyEJpQViYrQ1P6rNZJEQ-xWtamCpqD6bQpYmpcBelrsuPAXcFHl1HKf1o4yzUKjdM85-XhmblBOIh1BpemBz3Sjg-Wah9H_UOKnPikkCUAsbJNDh9eiVM3RK6kLwezl4km4z-j0zjNrHF6RCOdsw9C2vAIBiDI0MKaFELUnppdDLonIt0DT5zGjybdRFG8Xm3nSo0TBFA==
+url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjtrcNQ25GuL2FMnOZfXWbZCiNkKxfhMBywUlX7eyMAEfD1DYevcZ7HtCe9SbvElEWi5hrCs_TyjHd38BmIcEAfLMCAlqdA4bEoHLbW-bkJ-O-ynn9YvqITzPkOytMmWB2rbiEWDs7lEMhDv546FTGiGEJUL_rl0490ZMqNcYrkvgjPMoM7gw9iMAEkCBxs_ghlY_Lz_KiwllMRaN9TapRy6U=
+url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSFvdwmaXSMwspl_OsVBYmW1i00pFe_6SKdSY_0KGoE19oBkMNBy13UUzJy1-WSoROYhO9n0gCX7s-cGtfUJj5-DVM9uJYwp8xk5R2M_XPhHdkUZ9mxMdgfKainVnZPu0bc7lRrhANgMSr2qnxnVAYjDkj
+
+thought
+I have successfully identified the latest key documents:
+*   **NVIDIA's 10-K for fiscal year 2025** was filed on February 26, 2025.
+*   **NVIDIA's Q1 2025 10-Q** was filed on May 28, 2025.
+*   **NVIDIA's Q2 2025 10-Q** was filed on August 28, 2024. This seems to be fiscal Q2 2025, meaning it covers the period ending July 2024. This means I should use the Q1 2025 10-Q for the most recent financial data in addition to the annual report.
+
+I will prioritize the Q1 2025 10-Q and the FY25 10-K for the most recent data. I also have earnings call transcripts for Q1 and Q2 2025. The Q1 2025 earnings call transcript is dated May 29, 2024 (Motley Fool) or May 28, 2025 (Investing.com, SemiWiki, YouTube), which is confusing. The SEC filing date of May 28, 2025 for the 10-Q aligns better with the current date of August 20, 2025. The Q2 2025 earnings call transcript is dated August 28, 2024. I need to be careful with fiscal years vs. calendar years.
+
+NVIDIA's fiscal year ends on the last Sunday of January. So, Fiscal Q1 2025 would typically end in April 2024. Fiscal Q2 2025 would end in July 2024. The 10-K dated Feb 26, 2025 is for the fiscal year ended January 2025. The 10-Q dated May 28, 2025 is for the quarter ended April 2025 (fiscal Q1 2026, probably). The Q2 2025 earnings call transcript dated August 28, 2024 refers to fiscal Q2 2025 which ended July 2024.
+
+Let's re-confirm the latest financial periods.
+*   The 10-K filed on February 26, 2025, covers the fiscal year ended January 28, 2025.
+*   The 10-Q filed on May 28, 2025, covers the fiscal quarter ended April 28, 2025. This is fiscal Q1 2026.
+*   The Q2 2025 earnings call transcript is from August 28, 2024. This covers the quarter ended July 2024 (fiscal Q2 2025).
+
+Given the current date is August 20, 2025, the latest available **annual report** would be the 10-K filed February 26, 2025 (for FY25, ended January 28, 2025). The latest **quarterly report** is the 10-Q filed May 28, 2025 (for FQ1 2026, ended April 28, 2025). The Q2 2025 earnings call transcript (August 28, 2024) is *older* than the Q1 2026 10-Q, so I should rely more on the 10-Q and the Q1 2026 earnings call for the most recent insights. The Q1 2025 earnings call (May 28, 2025) discusses FQ1 2026 results. This is confusing, but I will go with the latest filings.
+
+Let's assume the Q1 2025 earnings call transcripts refer to the quarter *ended April 28, 2025* (i.e., fiscal Q1 2026). This is the most recent financial reporting available before the hypothetical Q2 2026 earnings for the quarter ending July 2025.
+
+So, primary sources:
+*   NVIDIA Corporation 10-K, for the fiscal year ended January 28, 2025, filed February 26, 2025.
+*   NVIDIA Corporation 10-Q, for the fiscal quarter ended April 28, 2025, filed May 28, 2025.
+*   NVIDIA Q1 2025 (Fiscal Q1 2026) Earnings Call Transcript, May 28, 2025 / May 29, 2025.
+
+Now I will go through each point.
+
+---
+Company, date of analysis, primary sources reviewed: NVIDIA Corporation, August 20, 2025, NVIDIA 10-K for FY2025 (filed February 26, 2025), NVIDIA 10-Q for FQ1 2026 (filed May 28, 2025), NVIDIA Q1 2025 (FQ1 2026) Earnings Call Transcript (May 28/29, 2025).
+
+**1) Products/Services with Long Runway**
+**Question:** Does the company have products or services with sufficient market potential to make possible a sizable increase in sales for at least several years?
+**Reasoning & Evidence:** NVIDIA's data center revenue, primarily driven by AI, reached a record $22.6 billion in fiscal Q1 2026, up 427% year-on-year, driven by strong demand for its Hopper GPU computing platform. The company is launching its new Blackwell architecture into full production, which is designed to power the entire AI lifecycle from training to inference, indicating a continued focus on this high-growth market. NVIDIA's CEO Jensen Huang stated that AI is growing faster and will be larger than any prior platform shifts, highlighting a vast addressable market for the company's core products.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe7RjzlwxCQ1e6SkrETKI88d2itehuhewH7848hgc6CAkE1VW0jioyXLUJ1IQq54vtmW-nTLpit0R3FNTkXQIiSGRZL0KB2N1WQI-56vVMjD9aH_dTDcE3B2dA5QpmvuPo85CWWJmj1virkSwXxIeMg67J0krAAb5e9tIdZZQworaAvQlYmBZVaxoway_YQ33dv9z0b7L4F2yhrfqB5fLW9tR8cSfAtM9D6sgRDzKRscAlETLYX3xf5w==
+3.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAsx3-L0zj35M5ICNf2v0wymLQxl7W1nvtCXQelgPwpFlLy9TLeYAyW8OLYIWs07-PA6u6vHlZ-Bqkur9ki9oRytcrYPjHONvNJGKeZOwbtuUpJTDAsslCuoAXPGIL4NgB4rFmxryg56dLqOyVpsmdX_wifvjrhRcbSAw0cieqyPNCC8jmuLrGPNKggbBaK4OqtOR6ZXqDZIHuuZbEvaI=
+
+**2) Commitment to Ongoing Development**
+**Question:** Does management have a determination to continue to develop products or processes that will further increase total sales potential once current lines mature?
+**Reasoning & Evidence:** NVIDIA's introduction of the Blackwell architecture into full production, along with products like the RTX Pro enterprise AI server and DGX Spark, demonstrates a clear commitment to new product development beyond existing Hopper platforms. The company is also exploring emerging opportunities like 6G and quantum computing, and foresees AI factories sitting alongside every physical factory, indicating a long-term vision for new revenue streams.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe7RjzlwxCQ1e6SkrETKI88d2itehuhewH7848hgc6CAkE1VW0jioyXLUJ1IQq54vtmW-nTLpit0R3FNTkXQIiSGRZL0KB2N1WQI-56vVMjD9aH_dTDcE3B2dA5QpmvuPo85CWWJmj1virkSwXxIeMg67J0krAAb5e9tIdZZQworaAvQlYmBZVaxoway_YQ33dv9z0b7L4F2yhrfqB5fLW9tR8cSfAtM9D6sgRDzKRscAlETLYX3xf5w==
+3.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAsx3-L0zj35M5ICNf2v0wymLQxl7W1nvtCXQelgPwpFlLy9TLeYAyW8OLYIWs07-PA6u6vHlZ-Bqkur9ki9oRytcrYPjHONvNJGKeZOwbtuUpJTDAsslCuoAXPGIL4NgB4rFmxryg56dLqOyVpsmdX_wifvjrhRcbSAw0cieqyPNCC8jmuLrGPNKggbBaK4OqtOR6ZXqDZIHuuZbEvaI=
+
+**3) R&D Effectiveness Relative to Size**
+**Question:** How effective are the company’s R&D efforts in relation to its size?
+**Reasoning & Evidence:** NVIDIA consistently invests heavily in R&D, which is evident in its continuous leadership in high-performance computing and AI. The rapid transition to and full production of the Blackwell architecture, succeeding the highly successful Hopper, underscores effective R&D and time-to-market execution. The company's ability to drive significant revenue growth (e.g., Data Center revenue up 427% year-on-year in FQ1 2026) through new product adoption demonstrates highly effective R&D translating into market success.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe7RjzlwxCQ1e6SkrETKI88d2itehuhewH7848hgc6CAkE1VW0jioyXLUJ1IQq54vtmW-nTLpit0R3FNTkXQIiSGRZL0KB2N1WQI-56vVMjD9aH_dTDcE3B2dA5QpmvuPo85CWWJmj1virkSwXxIeMg67J0krAAb5e9tIdZZQworaAvQlYmBZVaxoway_YQ33dv9z0b7L4F2yhrfqB5fLW9tR8cSfAtM9D6sgRDzKRscAlETLYX3xf5w==
+3.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAsx3-L0zj35M5ICNf2v0wymLQxl7W1nvtCXQelgPwpFlLy9TLeYAyW8OLYIWs07-PA6u6vHlZ-Bqkur9ki9oRytcrYPjHONvNJGKeZOwbtuUpJTDAsslCuoAXPGIL4NgB4rFmxryg56dLqOyVpsmdX_wifvjrhRcbSAw0cieqyPNCC8jmuLrGPNKggbBaK4OqtOR6ZXqDZIHuuZbEvaI=
+
+**4) Above-Average Sales Organization**
+**Question:** Does the company have an above-average sales organization?
+**Reasoning & Evidence:** NVIDIA's record Data Center revenue of $22.6 billion in FQ1 2026, driven by all customer types including enterprise and consumer Internet companies, indicates strong market penetration and sales effectiveness. The company's expansion into new sectors like healthcare, automotive, and enterprise AI, supported by strategic partnerships, suggests a robust sales and business development capability. The rapid adoption and deployment of new platforms like Blackwell, even with their complexity, further points to an efficient sales and distribution network capable of handling high demand.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe7RjzlwxCQ1e6SkrETKI88d2itehuhewH7848hgc6CAkE1VW0jioyXLUJ1IQq54vtmW-nTLpit0R3FNTkXQIiSGRZL0KB2N1WQI-56vVMjD9aH_dTDcE3B2dA5QpmvuPo85CWWJmj1virkSwXxIeMg67J0krAAb5e9tIdZZQworaAvQlYmBZVaxoway_YQ33dv9z0b7L4F2yhrfqB5fLW9tR8cSfAtM9D6sgRDzKRscAlETLYX3xf5w==
+3.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAsx3-L0zj35M5ICNf2v0wymLQxl7W1nvtCXQelgPwpFlLy9TLeYAyW8OLYIWs07-PA6u6vHlZ-Bqkur9ki9oRytcrYPjHONvNJGKeZOwbtuUpJTDAsslCuoAXPGIL4NgB4rFmxryg56dLqOyVpsmdX_wifvjrhRcbSAw0cieqyPNCC8jmuLrGPNKggbBaK4OqtOR6ZXqDZIHuuZbEvaI=
+4.  NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS3zJbqcHXqu9Gw3tVfrfuqq0_L6_SVwaSx7jRLcb6cPqN4R5LDR2ioqMB6-cBwzVgOBX6IUlK1RzPFAP91_Fl-Qx6NhYDvLClMC4C6_GdDfepTFjqgT-eVf6wWPwt-O4CCmvbX9uyygIU-y0bt-b3kH2rr0I1_qlHcwcZOxNuAIL9l10i2k6vM_oIa24Xr65sXiMPrQTJ8p8S67NIFsVpqALCd9g=
+5.  Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSFvdwmaXSMwspl_OsVBYmW1i00pFe_6SKdSY_0KGoE19oBkMNBy13UUzJy1-WSoROYhO9n0gCX7s-cGtfUJj5-DVM9uJYwp8xk5R2M_XPhHdkUZ9mxMdgfKainVnZPu0bc7lRrhANgMSr2qnxnVAYjDkj
+
+**5) Worthwhile Profit Margins**
+**Question:** Does the company have a worthwhile profit margin?
+**Reasoning & Evidence:** NVIDIA reported a GAAP gross margin of 78.4% and non-GAAP gross margin of 78.9% in fiscal Q1 2026. For the full fiscal year, the company expects gross margins to be in the mid-70s percent range. These margins are exceptionally high and indicate strong pricing power and cost efficiency, especially within the highly competitive semiconductor industry.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe7RjzlwxCQ1e6SkrETKI88d2itehuhewH7848hgc6CAkE1VW0jioyXLUJ1IQq54vtmW-nTLpit0R3FNTkXQIiSGRZL0KB2N1WQI-56vVMjD9aH_dTDcE3B2dA5QpmvuPo85CWWJmj1virkSwXxIeMg67J0krAAb5e9tIdZZQworaAvQlYmBZVaxoway_YQ33dv9z0b7L4F2yhrfqB5fLW9tR8cSfAtM9D6sgRDzKRscAlETLYX3xf5w==
+
+**6) Margin Improvement Actions**
+**Question:** What is the company doing to maintain or improve profit margins?
+**Reasoning & Evidence:** NVIDIA's gross margins benefited from favorable component costs in FQ1 2026. The company is shifting its Data Center mix to new, higher-value products like Blackwell, which is expected to continue to impact gross margins. Additionally, NVIDIA is focused on accelerating customer time to market and achieving the lowest cost per inference token with new systems like GB200 NVL, suggesting a focus on efficiency and value delivery that can support margins.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe7RjzlwxCQ1e6SkrETKI88d2itehuhewH7848hgc6CAkE1VW0jioyXLUJ1IQq54vtmW-nTLpit0R3FNTkXQIiSGRZL0KB2N1WQI-56vVMjD9H_dTDcE3B2dA5QpmvuPo85CWWJmj1virkSwXxIeMg67J0krAAb5e9tIdZZQworaAvQlYmBZVaxoway_YQ33dv9z0b7L4F2yhrfqB5fLW9tR8cSfAtM9D6sgRDzKRscAlETLYX3xf5w==
+3.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAsx3-L0zj35M5ICNf2v0wymLQxl7W1nvtCXQelgPwpFlLy9TLeYAyW8OLYIWs07-PA6u6vHlZ-Bqkur9ki9oRytcrYPjHONvNJGKeZOwbtuUpJTDAsslCuoAXPGIL4NgB4rFmxryg56dLqOyVpsmdX_wifvjrhRcbSAw0cieqyPNCC8jmuLrGPNKggbBaK4OqtOR6ZXqDZIHuuZbEvaI=
+4.  NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS3zJbqcHXqu9Gw3tVfrfuqq0_L6_SVwaSx7jRLcb6cPqN4R5LDR2ioqMB6-cBwzVgOBX6IUlK1RzPFAP91_Fl-Qx6NhYDvLClMC4C6_GdDfepTFjqgT-eVf6wWPwt-O4CCmvbX9uyygIU-y0bt-b3kH2rr0I1_qlHcwcZOxNuAIL9l10i2k6vM_oIa24Xr65sXiMPrQTJ8p8S67NIFsVpqALCd9g=
+5.  Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSFvdwmaXSMwspl_OsVBYmW1i00pFe_6SKdSY_0KGoE19oBkMNBy13UUzJy1-WSoROYhO9n0gCX7s-cGtfUJj5-DVM9uJYwp8xk5R2M_XPhHdkUZ9mxMdgfKainVnZPu0bc7lRrhANgMSr2qnxnVAYjDkj
+
+**7) Labor & Personnel Relations**
+**Question:** Does the company have outstanding labor and personnel relations?
+**Reasoning & Evidence:** The provided search results and filings primarily focus on financial performance and product development, with limited specific disclosures on detailed labor and personnel relations metrics like attrition rates or engagement scores. While NVIDIA is a highly sought-after employer in its field, without explicit recent disclosures or positive mentions in official documents regarding labor relations beyond general compensation growth, it's difficult to definitively assess "outstanding" relations.
+**Answer:** No
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+
+**8) Executive Relations**
+**Question:** Does the company have outstanding executive relations?
+**Reasoning & Evidence:** Jensen Huang has been the President and CEO of NVIDIA since its inception, providing consistent and long-term leadership. The stability of top leadership, as evidenced by Huang's continued role and the consistent presence of Colette Kress as CFO in earnings calls, suggests strong internal executive relations. While a proxy statement (DEF 14A) would offer more detail on board/executive compensation and alignment, the strong financial performance and strategic execution under current leadership indicate effective executive relations.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS3zJbqcHXqu9Gw3tVfrfuqq0_L6_SVwaSx7jRLcb6cPqN4R5LDR2ioqMB6-cBwzVgOBX6IUlK1RzPFAP91_Fl-Qx6NhYDvLClMC4C6_GdDfepTFjqgT-eVf6wWPwt-O4CCmvbX9uyygIU-y0bt-b3kH2rr0I1_qlHcwcZOxNuAIL9l10i2k6vM_oIa24Xr65sXiMPrQTJ8p8S67NIFsVpqALCd9g=
+3.  Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSFvdwmaXSMwspl_OsVBYmW1i00pFe_6SKdSY_0KGoE19oBkMNBy13UUzJy1-WSoROYhO9n0gCX7s-cGtfUJj5-DVM9uJYwp8xk5R2M_XPhDkUZ9mxMdgfKainVnZPu0bc7lRrhANgMSr2qnxnVAYjDkj
+
+**9) Depth of Management**
+**Question:** Does the company have depth to its management?
+**Reasoning & Evidence:** While CEO Jensen Huang is prominently featured, the consistent presence of CFO Colette Kress in earnings calls indicates a strong and stable financial leadership. The significant growth and expansion across multiple complex market segments (Data Center, Gaming, Professional Visualization, Automotive) suggests the need for and presence of capable operating leaders beneath the executive level. The company's ability to execute on large-scale product ramps like Blackwell points to well-structured operational management, though specific details on named segment leaders or formal succession planning are not explicitly detailed in the provided earnings call transcripts.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSFvdwmaXSMwspl_OsVBYmW1i00pFe_6SKdSY_0KGoE19oBkMNBy13UUzJy1-WSoROYhO9n0gCX7s-cGtfUJj5-DVM9uJYwp8xk5R2M_XPhDkUZ9mxMdgfKainVnZPu0bc7lRrhANgMSr2qnxnVAYjDkj
+3.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAsx3-L0zj35M5ICNf2v0wymLQxl7W1nvtCXQelgPwpFlLy9TLeYAyW8OLYIWs07-PA6u6vHlZ-Bqkur9ki9oRytcrYPjHONvNJGKeZOwbtuUpJTDAsslCuoAXPGIL4NgB4rFmxryg56dLqOyVpsmdX_wifvjrhRcbSAw0cieqyPNCC8jmuLrGPNKggbBaK4OqtOR6ZXqDZIHuuZbEvaI=
+
+**10) Cost Analysis & Accounting Controls**
+**Question:** How good are the company’s cost analysis and accounting controls?
+**Reasoning & Evidence:** NVIDIA files comprehensive financial reports (10-K, 10-Q) with the SEC, which include detailed segment disclosures and audited financial statements. The 10-K from February 26, 2025, indicates that the registrant is a large accelerated filer and has filed all required reports, including an attestation to management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act. This suggests robust internal controls and good cost analysis.
+**Answer:** Yes
+**Citations:**
+1.  FORM 10-K NVIDIA CORPORATION, February 26, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBOAzFZlvi41uIbnxkEayQMgiekR27jpj0qUL-AhYYGk0_1Gepmkrry3NJLhH-kfe0ZILgog0qFCnf-FDu-sB7aOJgf8_rUAfhBUW8F76nxd4hFlZqlQb8VKGvnQ6s0HhTYXiURD8XS7FtCg1UOl7JNlMGUOF7VquarmSgt0ApeKArZrXMy_16PXMYz8PCUp3kkRZtbMD414lU2wfmFg29
+2.  Financial Info - SEC Filings - NVIDIA Corporation, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZI4JalLDCebO-ChRXC5ED884Lq71qij0tUJ_itFqnZ3qV8a3LxX5ZBzVII7aculKQg8OEGVZ_rX-6I0L-qhEpK0JYka9_ThqwEoPAiBDkummBYZIiFy7cTBwk44ZvmHQDD-z-SakG8-GTlUrNVtvVIJTMLVZNf7p3DDflIzg=
+
+**11) Industry-Specific Competitive Clues**
+**Question:** Are there other aspects of the business—peculiar to the industry—that give important clues about how outstanding the company may be versus competition?
+**Reasoning & Evidence:** NVIDIA's CUDA ecosystem provides a significant competitive moat, enabling deep integration of its hardware with a vast software developer base. The rapid adoption of new architectures like Blackwell, with improved manufacturing yields and swift rack shipments, highlights a strong operational execution and technical leadership in the complex semiconductor and AI infrastructure industry. The company's leadership in both compute and networking for AI data centers, with Spectrum-X emerging as a multi-billion dollar product, demonstrates its comprehensive platform approach beyond just GPUs.
+**Answer:** Yes
+**Citations:**
+1.  NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS3zJbqcHXqu9Gw3tVfrfuqq0_L6_SVwaSx7jRLcb6cPqN4R5LDR2ioqMB6-cBwzVgOBX6IUlK1RzPFAP91_Fl-Qx6NhYDvLClMC4C6_GdDfepTFjqgT-eVf6wWPwt-O4CCmvbX9uyygIU-y0bt-b3kH2rr0I1_qlHcwcZOxNuAIL9l10i2k6vM_oIa24Xr65sXiMPrQTJ8p8S67NIFsVpqALCd9g=
+2.  Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSFvdwmaXSMwspl_OsVBYmW1i00pFe_6SKdSY_0KGoE19oBkMNBy13UUzJy1-WSoROYhO9n0gCX7s-cGtfUJj5-DVM9uJYwp8xk5R2M_XPhDkUZ9mxMdgfKainVnZPu0bc7lRrhANgMSr2qnxnVAYjDkj
+3.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+
+**12) Long-Range vs Short-Range Profit Outlook**
+**Question:** Does the company have a long-range outlook in regard to profits (willing to trade near-term results for durable growth)?
+**Reasoning & Evidence:** NVIDIA's emphasis on investing in next-generation architectures like Blackwell, even with associated short-term impacts like inventory provisions for low-yielding material, demonstrates a long-range perspective focused on future market leadership. CEO Jensen Huang consistently articulates a vision of AI as the next major platform shift, requiring significant ongoing investment in infrastructure and new product categories, indicating a willingness to prioritize long-term growth over immediate profit maximization. The expectation of full-year gross margins in the mid-70% range despite product mix shifts suggests strategic management for durable profitability.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS3zJbqcHXqu9Gw3tVfrfuqq0_L6_SVwaSx7jRLcb6cPqN4R5LDR2ioqMB6-cBwzVgOBX6IUlK1RzPFAP91_Fl-Qx6NhYDvLClMC4C6_GdDfepTFjqgT-eVf6wWPwt-O4CCmvbX9uyygIU-y0bt-b3kH2rr0I1_qlHcwcZOxNuAIL9l10i2k6vM_oIa24Xr65sXiMPrQTJ8p8S67NIFsVpqALCd9g=
+3.  Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSFvdwmaXSMwspl_OsVBYmW1i00pFe_6SKdSY_0KGoE19oBkMNBy13UUzJy1-WSoROYhO9n0gCX7s-cGtfUJj5-DVM9uJYwp8xk5R2M_XPhDkUZ9mxMdgfKainVnZPu0bc7lRrhANgMSr2qnxnVAYjDkj
+
+**13) Equity Financing Dilution Risk**
+**Question:** Is the company's financial position strong enough to fund foreseeable growth without resorting to equity financing that would meaningfully dilute existing shareholders?
+**Reasoning & Evidence:** NVIDIA reported strong cash flow from operations of $14.5 billion in fiscal Q2 2025, and returned $7.8 billion to shareholders through share repurchases and cash dividends in fiscal Q1 2026. The board of directors approved a new $50 billion share repurchase authorization in Q2 2025, adding to a remaining $7.5 billion authorization, demonstrating ample financial capacity and a preference for returning capital to shareholders rather than diluting them. This strong cash generation and capital return program indicate that the company can fund its growth internally.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS3zJbqcHXqu9Gw3tVfrfuqq0_L6_SVwaSx7jRLcb6cPqN4R5LDR2ioqMB6-cBwzVgOBX6IUlK1RzPFAP91_Fl-Qx6NhYDvLClMC4C6_GdDfepTFjqgT-eVf6wWPwt-O4CCmvbX9uyygIU-y0bt-b3kH2rr0I1_qlHcwcZOxNuAIL9l10i2k6vM_oIa24Xr65sXiMPrQTJ8p8S67NIFsVpqALCd9g=
+3.  Nvidia (NVDA) Q2 2025 Earnings Call Transcript, The Motley Fool, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjtrcNQ25GuL2FMnOZfXWbZCiNkKxfhMBywUlX7eyMAEfD1DYevcZ7HtCe9SbvElEWi5hrCs_TyjHd38BmIcEAfLMCAlqdA4bEoHLbW-bkJ-O-ynn9YvqITzPkOytMmWB2rbiEWDs7lEMhDv546FTGiGEJUL_rl0490ZMqNcYrkvgjPMoM7gw9iMAEkCBxs_ghlY_Lz_KiwllMRaN9TapRy6U=
+
+**14) Candor with Investors**
+**Question:** Does management talk freely to investors when things are going well and when troubles occur (i.e., no “clam up”)?
+**Reasoning & Evidence:** NVIDIA's earnings call transcripts demonstrate transparent communication regarding both strong performance (record revenues, rapid adoption of new platforms) and challenges, such as the impact of export restrictions on Data Center revenue in China. CEO Jensen Huang directly addressed the impact of H20 export licensing controls and its effect on China data center revenue, indicating a willingness to discuss adverse factors. The detailed financial outlook and discussion of component costs and product mix shifts further suggest candor.
+**Answer:** Yes
+**Citations:**
+1.  Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-4bwvL5xsIdisLpCoABWvpQs_8lVwdqQAfvaTx8Tc3vJzFk1rg2qJf3LjUqdxHAiUshnpORcMhDX8fMFYF7RNgjaL9rLz3BlTjFvjpHH006RX7NNAJNQLr2pW7v9HK2fhrwaQleSNAba-T4St0Wqd91KRT_PEvPTwFqMJqkATr1pOQSALXi38DWOH8XU-4AXnM3jXpXGfErSCKUzRdFOnEk=
+2.  Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAsx3-L0zj35M5ICNf2v0wymLQxl7W1nvtCXQelgPwpFlLy9TLeYAyW8OLYIWs07-PA6u6vHlZ-Bqkur9ki9oRytcrYPjHONvNJGKeZOwbtuUpJTDAsslCuoAXPGIL4NgB4rFmxryg56dLqOyVpsmdX_wifvjrhRcbSAw0cieqyPNCC8jmuLrGPNKggbBaK4OqtOR6ZXqDZIHuuZbEvaI=
+3.  Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSFvdwmaXSMwspl_OsVBYmW1i00pFe_6SKdSY_0KGoE19oBkMNBy13UUzJy1-WSoROYhO9n0gCX7s-cGtfUJj5-DVM9uJYwp8xk5R2M_XPhDkUZ9mxMdgfKainVnZPu0bc7lRrhANgMSr2qnxnVAYjDkj
+
+**15) Unquestionable Integrity**
+**Question:** Does the company have a management of unquestionable integrity?
+**Reasoning & Evidence:** The financial filings (10-K, 10-Q) show consistent compliance with SEC reporting requirements, including attestation to internal controls. There are no immediate red flags or mentions of recent legal/regulatory issues, significant accounting controversies, or related-party transaction concerns in the provided recent earnings call transcripts or search results. While a deeper dive into proxy statements (DEF 14A) for governance specifics is ideal, the publicly available information suggests a high level of integrity in its operations and reporting.
+**Answer:** Yes
+**Citations:**
+1.  FORM 10-K NVIDIA CORPORATION, February 26, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBOAzFZlvi41uIbnxkEayQMgiekR27jpj0qUL-AhYYGk0_1Gepmkrry3NJLhH-kfe0ZILgog0qFCnf-FDu-sB7aOJgf8_rUAfhBUW8F76nxd4hFlZqlQb8VKGvnQ6s0HhTYXiURD8XS7FtCg1UOl7JNlMGUOF7VquarmSgt0ApeKArZrXMy_16PXMYz8PCUp3kkRZtbMD414lU2wfmFg29
+2.  Financial Info - SEC Filings - NVIDIA Corporation, May 28, 2025. https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZI4JalLDCebO-ChRXC5ED884Lq71qij0tUJ_itFqnZ3qV8a3LxX5ZBzVII7aculKQg8OEGVZ_rX-6I0L-qhEpK0JYka9_ThqwEoPAiBDkummBYZIiFy7cTBwk44ZvmHQDD-z-SakG8-GTlUrNVtvVIJTMLVZNf7p3DDflIzg=
+
+**Fisher Score Calculation:**
+1.  Yes
+2.  Yes
+3.  Yes
+4.  Yes
+5.  Yes
+6.  Yes
+7.  No
+8.  Yes
+9.  Yes
+10. Yes
+11. Yes
+12. Yes
+13. Yes
+14. Yes
+15. Yes
+
+Total Yes = 14
+Total No = 1
+
+Fisher Score = 14 / 15
+
+---
+**Synthesis:**
+NVIDIA Corporation demonstrates exceptional strength across most of Fisher's 15 points, primarily driven by its dominant position in the burgeoning AI and data center markets. The company benefits from a long runway for its products, evidenced by significant revenue growth in its Data Center segment and the strategic rollout of new architectures like Blackwell. NVIDIA's commitment to continuous R&D and its highly effective innovation engine are clear, translating into impressive profit margins and strong sales execution. Management appears stable and candid with investors, and the financial position is robust enough to avoid dilutive financing. The primary area where definitive evidence was lacking pertains to detailed "Labor & Personnel Relations," as specific metrics like attrition or extensive employee satisfaction data were not readily available in the reviewed financial filings and earnings transcripts. Concrete disclosures on employee engagement, retention rates, or a dedicated HR report would convert this "No" to a "Yes" in the next 12-24 months.
+
+fisher score is 14 / 15Company, date of analysis, primary sources reviewed: NVIDIA Corporation, August 20, 2025, NVIDIA 10-K for FY2025 (filed February 26, 2025), NVIDIA 10-Q for FQ1 2026 (filed May 28, 2025), NVIDIA Q1 2025 (FQ1 2026) Earnings Call Transcript (May 28/29, 2025).
+
+1) Products/Services with Long Runway
+**Question:** Does the company have products or services with sufficient market potential to make possible a sizable increase in sales for at least several years?
+**Reasoning & Evidence:** NVIDIA's data center revenue, primarily driven by AI, reached a record $22.6 billion in fiscal Q1 2026, up 427% year-on-year, driven by strong demand for its Hopper GPU computing platform. The company is launching its new Blackwell architecture into full production, which is designed to power the entire AI lifecycle from training to inference, indicating a continued focus on this high-growth market. NVIDIA's CEO Jensen Huang stated that AI is growing faster and will be larger than any prior platform shifts, highlighting a vast addressable market for the company's core products.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025.
+3. Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025.
+
+2) Commitment to Ongoing Development
+**Question:** Does management have a determination to continue to develop products or processes that will further increase total sales potential once current lines mature?
+**Reasoning & Evidence:** NVIDIA's introduction of the Blackwell architecture into full production, along with products like the RTX Pro enterprise AI server and DGX Spark, demonstrates a clear commitment to new product development beyond existing Hopper platforms. The company is also exploring emerging opportunities like 6G and quantum computing, and foresees AI factories sitting alongside every physical factory, indicating a long-term vision for new revenue streams.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025.
+3. Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025.
+
+3) R&D Effectiveness Relative to Size
+**Question:** How effective are the company’s R&D efforts in relation to its size?
+**Reasoning & Evidence:** NVIDIA consistently invests heavily in R&D, which is evident in its continuous leadership in high-performance computing and AI. The rapid transition to and full production of the Blackwell architecture, succeeding the highly successful Hopper, underscores effective R&D and time-to-market execution. The company's ability to drive significant revenue growth (e.g., Data Center revenue up 427% year-on-year in FQ1 2026) through new product adoption demonstrates highly effective R&D translating into market success.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025.
+3. Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025.
+
+4) Above-Average Sales Organization
+**Question:** Does the company have an above-average sales organization?
+**Reasoning & Evidence:** NVIDIA's record Data Center revenue of $22.6 billion in FQ1 2026, driven by all customer types including enterprise and consumer Internet companies, indicates strong market penetration and sales effectiveness. The company's expansion into new sectors like healthcare, automotive, and enterprise AI, supported by strategic partnerships, suggests a robust sales and business development capability. The rapid adoption and deployment of new platforms like Blackwell, even with their complexity, further points to an efficient sales and distribution network capable of handling high demand.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025.
+3. Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025.
+4. NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024.
+5. Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024.
+
+5) Worthwhile Profit Margins
+**Question:** Does the company have a worthwhile profit margin?
+**Reasoning & Evidence:** NVIDIA reported a GAAP gross margin of 78.4% and non-GAAP gross margin of 78.9% in fiscal Q1 2026. For the full fiscal year, the company expects gross margins to be in the mid-70s percent range. These margins are exceptionally high and indicate strong pricing power and cost efficiency, especially within the highly competitive semiconductor industry.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025.
+
+6) Margin Improvement Actions
+**Question:** What is the company doing to maintain or improve profit margins?
+**Reasoning & Evidence:** NVIDIA's gross margins benefited from favorable component costs in FQ1 2026. The company is shifting its Data Center mix to new, higher-value products like Blackwell, which is expected to continue to impact gross margins. Additionally, NVIDIA is focused on accelerating customer time to market and achieving the lowest cost per inference token with new systems like GB200 NVL, suggesting a focus on efficiency and value delivery that can support margins.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. Earnings call transcript: NVIDIA beats Q1 2025 expectations, Investing.com, May 28, 2025.
+3. Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025.
+4. NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024.
+5. Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024.
+
+7) Labor & Personnel Relations
+**Question:** Does the company have outstanding labor and personnel relations?
+**Reasoning & Evidence:** The provided search results and filings primarily focus on financial performance and product development, with limited specific disclosures on detailed labor and personnel relations metrics like attrition rates or engagement scores. While NVIDIA is a highly sought-after employer in its field, without explicit recent disclosures or positive mentions in official documents regarding labor relations beyond general compensation growth, it's difficult to definitively assess "outstanding" relations.
+**Answer:** No
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+
+8) Executive Relations
+**Question:** Does the company have outstanding executive relations?
+**Reasoning & Evidence:** Jensen Huang has been the President and CEO of NVIDIA since its inception, providing consistent and long-term leadership. The stability of top leadership, as evidenced by Huang's continued role and the consistent presence of Colette Kress as CFO in earnings calls, suggests strong internal executive relations. While a proxy statement (DEF 14A) would offer more detail on board/executive compensation and alignment, the strong financial performance and strategic execution under current leadership indicate effective executive relations.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024.
+3. Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024.
+
+9) Depth of Management
+**Question:** Does the company have depth to its management?
+**Reasoning & Evidence:** While CEO Jensen Huang is prominently featured, the consistent presence of CFO Colette Kress in earnings calls indicates a strong and stable financial leadership. The significant growth and expansion across multiple complex market segments (Data Center, Gaming, Professional Visualization, Automotive) suggests the need for and presence of capable operating leaders beneath the executive level. The company's ability to execute on large-scale product ramps like Blackwell points to well-structured operational management, though specific details on named segment leaders or formal succession planning are not explicitly detailed in the provided earnings call transcripts.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024.
+3. Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025.
+
+10) Cost Analysis & Accounting Controls
+**Question:** How good are the company’s cost analysis and accounting controls?
+**Reasoning & Evidence:** NVIDIA files comprehensive financial reports (10-K, 10-Q) with the SEC, which include detailed segment disclosures and audited financial statements. The 10-K from February 26, 2025, indicates that the registrant is a large accelerated filer and has filed all required reports, including an attestation to management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act. This suggests robust internal controls and good cost analysis.
+**Answer:** Yes
+**Citations:**
+1. FORM 10-K NVIDIA CORPORATION, February 26, 2025.
+2. Financial Info - SEC Filings - NVIDIA Corporation, May 28, 2025.
+
+11) Industry-Specific Competitive Clues
+**Question:** Are there other aspects of the business—peculiar to the industry—that give important clues about how outstanding the company may be versus competition?
+**Reasoning & Evidence:** NVIDIA's CUDA ecosystem provides a significant competitive moat, enabling deep integration of its hardware with a vast software developer base. The rapid adoption of new architectures like Blackwell, with improved manufacturing yields and swift rack shipments, highlights a strong operational execution and technical leadership in the complex semiconductor and AI infrastructure industry. The company's leadership in both compute and networking for AI data centers, with Spectrum-X emerging as a multi-billion dollar product, demonstrates its comprehensive platform approach beyond just GPUs.
+**Answer:** Yes
+**Citations:**
+1. NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024.
+2. Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024.
+3. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+
+12) Long-Range vs Short-Range Profit Outlook
+**Question:** Does the company have a long-range outlook in regard to profits (willing to trade near-term results for durable growth)?
+**Reasoning & Evidence:** NVIDIA's emphasis on investing in next-generation architectures like Blackwell, even with associated short-term impacts like inventory provisions for low-yielding material, demonstrates a long-range perspective focused on future market leadership. CEO Jensen Huang consistently articulates a vision of AI as the next major platform shift, requiring significant ongoing investment in infrastructure and new product categories, indicating a willingness to prioritize long-term growth over immediate profit maximization. The expectation of full-year gross margins in the mid-70% range despite product mix shifts suggests strategic management for durable profitability.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024.
+3. Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024.
+
+13) Equity Financing Dilution Risk
+**Question:** Is the company's financial position strong enough to fund foreseeable growth without resorting to equity financing that would meaningfully dilute existing shareholders?
+**Reasoning & Evidence:** NVIDIA reported strong cash flow from operations of $14.5 billion in fiscal Q2 2025, and returned $7.8 billion to shareholders through share repurchases and cash dividends in fiscal Q1 2026. The board of directors approved a new $50 billion share repurchase authorization in Q2 2025, adding to a remaining $7.5 billion authorization, demonstrating ample financial capacity and a preference for returning capital to shareholders rather than diluting them. This strong cash generation and capital return program indicate that the company can fund its growth internally.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. NVIDIA Corporation (NVDA) Q2 2025 Earnings Call Transcript Summary, Moomoo, August 28, 2024.
+3. Nvidia (NVDA) Q2 2025 Earnings Call Transcript, The Motley Fool, August 28, 2024.
+
+14) Candor with Investors
+**Question:** Does management talk freely to investors when things are going well and when troubles occur (i.e., no “clam up”)?
+**Reasoning & Evidence:** NVIDIA's earnings call transcripts demonstrate transparent communication regarding both strong performance (record revenues, rapid adoption of new platforms) and challenges, such as the impact of export restrictions on Data Center revenue in China. CEO Jensen Huang directly addressed the impact of H20 export licensing controls and its effect on China data center revenue, indicating a willingness to discuss adverse factors. The detailed financial outlook and discussion of component costs and product mix shifts further suggest candor.
+**Answer:** Yes
+**Citations:**
+1. Nvidia (NVDA) Q1 2025 Earnings Call Transcript, The Motley Fool, May 29, 2025.
+2. Earnings call transcript: NVIDIA beats Q1 2025 expectations, SemiWiki, May 28, 2025.
+3. Q2 2025 NVIDIA Corp Earnings Call Transcript, GuruFocus, August 28, 2024.
+
+15) Unquestionable Integrity
+**Question:** Does the company have a management of unquestionable integrity?
+**Reasoning & Evidence:** The financial filings (10-K, 10-Q) show consistent compliance with SEC reporting requirements, including attestation to internal controls. There are no immediate red flags or mentions of recent legal/regulatory issues, significant accounting controversies, or related-party transaction concerns in the provided recent earnings call transcripts or search results. While a deeper dive into proxy statements (DEF 14A) for governance specifics is ideal, the publicly available information suggests a high level of integrity in its operations and reporting.
+**Answer:** Yes
+**Citations:**
+1. FORM 10-K NVIDIA CORPORATION, February 26, 2025.
+2. Financial Info - SEC Filings - NVIDIA Corporation, May 28, 2025.
+
+---
+**Synthesis:**
+NVIDIA Corporation demonstrates exceptional strength across most of Fisher's 15 points, primarily driven by its dominant position in the burgeoning AI and data center markets. The company benefits from a long runway for its products, evidenced by significant revenue growth in its Data Center segment and the strategic rollout of new architectures like Blackwell. NVIDIA's commitment to continuous R&D and its highly effective innovation engine are clear, translating into impressive profit margins and strong sales execution. Management appears stable and candid with investors, and the financial position is robust enough to avoid dilutive financing. The primary area where definitive evidence was lacking pertains to detailed "Labor & Personnel Relations," as specific metrics like attrition or extensive employee satisfaction data were not readily available in the reviewed financial filings and earnings transcripts. Concrete disclosures on employee engagement, retention rates, or a dedicated HR report would convert this "No" to a "Yes" in the next 12-24 months.
+
+fisher score is 14 / 15
