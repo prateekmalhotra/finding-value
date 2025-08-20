@@ -1,0 +1,23 @@
+[project]
+name = "finding-value"
+version = "0.1.0"
+description = "finding value in the stock market"
+authors = [
+    {name = "moatboy",email = "prateekmalhotra@g.ucla.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-generativeai (>=0.8.5,<0.9.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "gspread (>=6.2.1,<7.0.0)",
+    "yfinance (>=0.2.65,<0.3.0)",
+    "google-auth-oauthlib (>=1.2.2,<2.0.0)",
+    "google-genai (>=1.30.0,<2.0.0)",
+    "google (>=3.0.0,<4.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
