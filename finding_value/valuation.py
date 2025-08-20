@@ -5,6 +5,53 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
+import requests
+import json
+
+# SEC requires a user agent (identify yourself politely)
+HEADERS = {"User-Agent": "Prateek Malhotra pmlhtra@google.com"}
+
+# Step 1: Load ticker → CIK mapping file
+TICKER_URL = "https://www.sec.gov/files/company_tickers.json"
+
+def get_cik_from_ticker(ticker: str) -> str:
+	"""
+	Convert stock ticker (e.g., AAPL) to zero-padded CIK string.
+	"""
+	resp = requests.get(TICKER_URL, headers=HEADERS)
+	mapping = resp.json()
+
+	ticker = ticker.upper()
+	for entry in mapping.values():
+		if entry["ticker"] == ticker:
+			cik = str(entry["cik_str"]).zfill(10)
+			return cik
+	raise ValueError(f"Ticker {ticker} not found in SEC mapping.")
+
+def get_filings_urls(ticker: str, forms=("10-K", "10-Q"), limit=5):
+    """Return direct filing document URLs for given ticker & forms."""
+    cik = get_cik_from_ticker(ticker)
+    url = f"https://data.sec.gov/submissions/CIK{cik}.json"
+    resp = requests.get(url, headers=HEADERS)
+    data = resp.json()
+
+    accession_numbers = data["filings"]["recent"]["accessionNumber"]
+    forms_list = data["filings"]["recent"]["form"]
+    documents = data["filings"]["recent"]["primaryDocument"]
+
+    results = []
+    for acc_num, form, doc in zip(accession_numbers, forms_list, documents):
+        if form in forms:
+            acc_num_nodash = acc_num.replace("-", "")
+            doc_url = (
+                f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{acc_num_nodash}/{doc}"
+            )
+            results.append(doc_url)
+            if len(results) >= limit:
+                break
+
+    return results
+
 def analyze_stock_valuation(stock_name: str, company_name: str) -> dict:
 	"""
 	Analyzes a stock by sending a valuation prompt to the Gemini API.
@@ -31,6 +78,8 @@ def analyze_stock_valuation(stock_name: str, company_name: str) -> dict:
 	if not os.getenv("GOOGLE_API_KEY"):
 		load_dotenv()
 
+	urls = get_filings_urls(stock_name)
+
 	prompt = f"""
 ROLE: Conservative valuation analyst performing a back-of-the-envelope intrinsic valuation using only primary sources and management commentary.
 
@@ -41,7 +90,9 @@ Estimate a conservative intrinsic value per share using a transparent, step-by-s
 
 DATA SOURCES (IN ORDER OF PRECEDENCE)
 1) Latest SEC filings (10-K/20-F, 10-Q, 8-K), annual report, and investor presentation.
+	Some SEC URLs you can browse: {urls}
 2) Most recent earnings call transcript and prepared remarks (management guidance only).
+   For transcripts this is a good link: https://discountingcashflows.com/company/{stock_name}/transcripts/
 3) Company IR releases and fact sheets.
 4) Reputable regulatory filings (e.g., prospectuses), credit agreements, and notes to financial statements.
 5) Good resources like:
@@ -75,21 +126,21 @@ B) MANAGEMENT GUIDANCE EXTRACTION
 
 C) FORECAST HORIZON AND CONSERVATIVE ASSUMPTIONS (5 YEARS)
    3) Forecast revenue for Years 1–5:
-      - Start from the lower end of management guidance or the most recent trailing run-rate, whichever is lower.
-      - If guidance is a range, use the low end.
-      - If no guidance, assume growth = min(last 3-year CAGR, inflation proxy) and justify.
+	  - Start from the lower end of management guidance or the most recent trailing run-rate, whichever is lower.
+	  - If guidance is a range, use the low end.
+	  - If no guidance, assume growth = min(last 3-year CAGR, inflation proxy) and justify.
    4) Margin path:
-      - Use the lower of: (a) management margin guidance low end; (b) average of last 3 years; (c) last twelve months.
-      - For operating margin expansion, require a concrete, cited driver (pricing, mix, cost-out). If not found, keep margins flat or compress modestly.
+	  - Use the lower of: (a) management margin guidance low end; (b) average of last 3 years; (c) last twelve months.
+	  - For operating margin expansion, require a concrete, cited driver (pricing, mix, cost-out). If not found, keep margins flat or compress modestly.
    5) Taxes:
-      - Use the higher of the recent effective tax rate and the statutory rate disclosed. Justify choice and cite.
+	  - Use the higher of the recent effective tax rate and the statutory rate disclosed. Justify choice and cite.
    6) Capital intensity:
-      - Capex: use the higher of (a) management capex guide, (b) last 3-year average as % of revenue, (c) LTM. Cite.
-      - Working capital: model as % of incremental revenue using the more conservative of recent history or guidance. If volatile, use a positive cash usage (i.e., working capital consumes cash).
-      - D&A: fade toward recent level unless explicit capacity additions justify growth. Cite.
-      - Leases: if material, treat lease repayments akin to debt service; reflect in FCFF or adjust to FCFE consistently.
+	  - Capex: use the higher of (a) management capex guide, (b) last 3-year average as % of revenue, (c) LTM. Cite.
+	  - Working capital: model as % of incremental revenue using the more conservative of recent history or guidance. If volatile, use a positive cash usage (i.e., working capital consumes cash).
+	  - D&A: fade toward recent level unless explicit capacity additions justify growth. Cite.
+	  - Leases: if material, treat lease repayments akin to debt service; reflect in FCFF or adjust to FCFE consistently.
    7) SBC and dilution:
-      - Treat SBC as a real economic cost. Either subtract SBC from FCFF or model future diluted shares using the higher of: (a) LTM diluted shares; (b) basic shares plus in-the-money options/RSUs from the filing. Explain approach and cite.
+	  - Treat SBC as a real economic cost. Either subtract SBC from FCFF or model future diluted shares using the higher of: (a) LTM diluted shares; (b) basic shares plus in-the-money options/RSUs from the filing. Explain approach and cite.
 
 D) FREE CASH FLOW CONSTRUCTION
    8) Define and compute FCFF each year (operating income * (1 - tax rate) + D&A - capex - change in working capital). Show the exact formula and each input with references.
@@ -97,9 +148,9 @@ D) FREE CASH FLOW CONSTRUCTION
 
 E) DISCOUNT RATE (CONSERVATIVE)
   10) Cost of equity via CAPM:
-      - Risk-free rate: use latest sovereign yield matching currency/tenor (e.g., 10-year U.S. Treasury). Cite date and source.
-      - Equity risk premium: use a conservative range (e.g., 5.5%–6.5%); pick the higher bound and justify.
-      - Beta: if not available from filings, infer a conservative beta of at least 1.0 unless a regulated/contracted profile is clearly evidenced. Explain rationale.
+	  - Risk-free rate: use latest sovereign yield matching currency/tenor (e.g., 10-year U.S. Treasury). Cite date and source.
+	  - Equity risk premium: use a conservative range (e.g., 5.5%–6.5%); pick the higher bound and justify.
+	  - Beta: if not available from filings, infer a conservative beta of at least 1.0 unless a regulated/contracted profile is clearly evidenced. Explain rationale.
   11) Cost of debt: infer from interest expense / average debt or disclosed rates; add a conservative spread if necessary. Cite.
   12) WACC: compute using conservative weights (treat off-balance sheet leases as debt where material). Show formula and numbers.
 
@@ -115,9 +166,9 @@ G) ENTERPRISE TO EQUITY BRIDGE
 H) PER-SHARE VALUE AND MARGIN OF SAFETY
   18) Divide by a conservative diluted share count (use the higher figure as per SBC treatment).
   19) Report a valuation range:
-      - Low (use lower revenue, flat margins, higher capex/WACC).
-      - Base (guided low-end inputs).
-      - High (only if explicitly justified by guidance; still conservative).
+	  - Low (use lower revenue, flat margins, higher capex/WACC).
+	  - Base (guided low-end inputs).
+	  - High (only if explicitly justified by guidance; still conservative).
   20) Compute an explicit Margin of Safety (MOS) price at 25–30% below the LOW estimate.
   21) If you reference the current share price, cite an official exchange or the company IR page with timestamp; otherwise, omit.
 
@@ -171,7 +222,7 @@ Now begin the analysis for {company_name} ({stock_name.upper()}) following the e
 			thinking_config=types.ThinkingConfig(thinking_budget=-1)
 		)
 
-		response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=config)
+		response = client.models.generate_content(model="gemini-2.5-pro", contents=prompt, config=config)
 		full_response_text = response.text
 
 		analysis_result = {
@@ -202,8 +253,8 @@ Now begin the analysis for {company_name} ({stock_name.upper()}) following the e
 
 def analyze_qualitative_aspects(stock_name: str, company_name: str) -> dict:
 	"""
-    Analyzes the qualitative aspects of a business, focusing on its economic moat.
-    """
+	Analyzes the qualitative aspects of a business, focusing on its economic moat.
+	"""
 	if not stock_name or not isinstance(stock_name, str):
 		raise ValueError("A valid stock name must be provided as a string.")
 
@@ -211,6 +262,8 @@ def analyze_qualitative_aspects(stock_name: str, company_name: str) -> dict:
 	# This is done once in main, but kept here for potential standalone use
 	if not os.getenv("GOOGLE_API_KEY"):
 		load_dotenv()
+
+	urls = get_filings_urls(stock_name)
 		
 	prompt = f"""
 ROLE: Senior competitive strategy & equity analyst tasked with rigorously assessing the COMPANY’S SUSTAINABLE COMPETITIVE ADVANTAGE ("moat").
@@ -219,11 +272,13 @@ COMPANY: {company_name} ({stock_name.upper()})
 OBJECTIVE
 Produce a disciplined, evidence-first moat assessment for {company_name} ({stock_name.upper()}) that results in a single, defensible moat score on a 0–5 scale. Be conservative, transparent, and explicit about every step, data source, and assumption. The final output must end with the exact line:
 
-    moat rating is X / 5
+	moat rating is X / 5
 
 DATA SOURCES (PRIORITIZE IN THIS ORDER)
-1) Latest SEC filings (10-K/20-F, 10-Q, 8-K), annual report, and investor presentation.  
+1) Latest SEC filings (10-K/20-F, 10-Q, 8-K), annual report, and investor presentation.
+	Here you can find SEC URLS: {urls}  
 2) Latest earnings call transcript and management prepared remarks (use only management-sourced claims for forward-looking statements).  
+   For transcripts this is a good link: https://discountingcashflows.com/company/{stock_name}/transcripts/
 3) Company investor-relations releases, statutory filings in primary listing jurisdiction, regulatory documents, credit agreements, and audited financial statements.  
 4) High-quality third-party sources (e.g., industry reports, government statistics) only to contextualize; primary evidence must be used for company-specific claims.
 
@@ -297,7 +352,7 @@ SCORING METHODOLOGY
 
 4. Report both the **numeric weighted score** (e.g., 72.4 / 100) and the **final integer moat rating** (0–5). The final line must be exactly:
 
-    moat rating is X / 5
+	moat rating is X / 5
 
 OUTPUT FORMAT (STRICT — MARKDOWN)
 1) Header line: Company, ticker, currency, date of analysis, primary sources reviewed (bulleted list of links + absolute dates).  
@@ -315,7 +370,7 @@ OUTPUT FORMAT (STRICT — MARKDOWN)
 10) Short verdict paragraph (3–5 sentences) that ties together why the assigned rating is appropriate and which evidence would flip the rating.  
 11) Final mandatory line (single line):  
 
-    moat rating is X / 5
+	moat rating is X / 5
 
 DECISION RULES & CONSERVATISM
 - If evidence is mixed, err **downward**. Document the mixed evidence and why the conservative choice was made.  
@@ -355,7 +410,7 @@ Begin the assessment for {company_name} ({stock_name.upper()}) using the exact s
 			thinking_config=types.ThinkingConfig(thinking_budget=-1)
 		)
 
-		response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=config)
+		response = client.models.generate_content(model="gemini-2.5-pro", contents=prompt, config=config)
 		full_response_text = response.text
 
 		analysis_result = {
@@ -386,8 +441,8 @@ Begin the assessment for {company_name} ({stock_name.upper()}) using the exact s
 
 def analyze_catalysts(stock_name: str, company_name: str) -> dict:
 	"""
-    Analyzes the qualitative aspects of a business, focusing on its economic moat.
-    """
+	Analyzes the qualitative aspects of a business, focusing on its economic moat.
+	"""
 	if not stock_name or not isinstance(stock_name, str):
 		raise ValueError("A valid stock name must be provided as a string.")
 
@@ -395,6 +450,8 @@ def analyze_catalysts(stock_name: str, company_name: str) -> dict:
 	# This is done once in main, but kept here for potential standalone use
 	if not os.getenv("GOOGLE_API_KEY"):
 		load_dotenv()
+
+	urls = get_filings_urls(stock_name)
 		
 	prompt = f"""
 ROLE: Catalyst strategist and equity analyst. Be an evidence-first investigator focused on identifying **near-term (0–12 months)** and **long-term (12–60 months)** catalysts that could plausibly drive the share price of {company_name} ({stock_name.upper()}) materially higher. Your work must be conservative, fully transparent, and auditable.
@@ -404,10 +461,13 @@ Produce a prioritized, quantified, and fully-cited catalogue of potential cataly
 
 DATA SOURCES (ORDER OF PRECEDENCE)
 1) Primary company disclosures: SEC filings (10-K/20-F, 10-Q, 8-K), annual report, definitive proxy, investor presentations, and press releases.  
+	Here are SEC URLs you can use: {urls}
 2) Latest earnings call transcript and prepared management remarks (use only management-sourced forward guidance).  
+   For transcripts this is a good link: https://discountingcashflows.com/company/{stock_name}/transcripts/
 3) Regulatory filings (prospectuses, credit agreements, material contracts) and regulator decisions.  
 4) Exchange records for price/time if current market price is referenced.  
 5) High-quality news (Reuters, Bloomberg, WSJ) only to corroborate dates/announcements — never to replace primary filings.
+6) http://openinsider.com/search?q={stock_name} -> for insider buying / selling information
 
 CITATION RULE (MANDATORY)
 - **Every numeric fact, date, share count, authorization amount, or direct quote must include a dated citation** with a working link and absolute date, e.g., (10-Q, Aug 7, 2025).  
@@ -491,12 +551,13 @@ catalyst score is x / 5
 			url_context = types.UrlContext
 		)
 
+
 		config = types.GenerateContentConfig(
 			tools=[grounding_tool, url_context_tool],
 			thinking_config=types.ThinkingConfig(thinking_budget=-1)
 		)
 
-		response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=config)
+		response = client.models.generate_content(model="gemini-2.5-pro", contents=prompt, config=config)
 		full_response_text = response.text
 
 		analysis_result = {
@@ -533,6 +594,8 @@ def analyze_fisher_qs(stock_name: str, company_name: str):
 	# This is done once in main, but kept here for potential standalone use
 	if not os.getenv("GOOGLE_API_KEY"):
 		load_dotenv()
+
+	urls = get_filings_urls(stock_name)
 		
 	prompt = f"""
 ROLE: Senior equity analyst applying Philip A. Fisher’s “15 Points” from *Common Stocks and Uncommon Profits*.
@@ -543,6 +606,9 @@ Analyze the company **{company_name} ({stock_name.upper()})** using Fisher’s 1
 - Cite specific sources (filings, earnings call transcripts, investor presentations, reputable news/trade sources, datasets) with working links and publication dates.
 - End each point with a forced **Answer: Yes/No** per the decision rules below.
 - Finish with a fisher score out of 15. 15 / 15 for all the best answers.
+
+Here are SEC Filings to help you: {urls}
+For transcripts this is a good link: https://discountingcashflows.com/company/{stock_name}/transcripts/
 
 CONSTRAINTS & QUALITY BAR
 - Use the **most recent** primary sources: latest annual/quarterly filings (10-K/20-F/10-Q), MD&A, earnings call transcripts, investor day decks. Supplement with major outlets (e.g., Bloomberg/Reuters/WSJ), respected trade journals, and credible third-party datasets (e.g., Statista can be cited if cross-checked).
@@ -678,12 +744,13 @@ CHECKLIST BEFORE YOU SUBMIT
 			url_context = types.UrlContext
 		)
 
+
 		config = types.GenerateContentConfig(
 			tools=[grounding_tool, url_context_tool],
 			thinking_config=types.ThinkingConfig(thinking_budget=-1)
 		)
 
-		response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=config)
+		response = client.models.generate_content(model="gemini-2.5-pro", contents=prompt, config=config)
 		full_response_text = response.text
 
 		analysis_result = {
