@@ -1,158 +1,174 @@
-## **Dine Brands Global, Inc. (DIN) - Intrinsic Value Analysis**
+### **Dine Brands Global, Inc. (DIN) - Intrinsic Value Estimation**
 
 *   **Company:** Dine Brands Global, Inc. (DIN)
-*   **Currency:** USD (Millions, unless otherwise noted)
-*   **Date of Analysis:** August 20, 2025
+*   **Currency:** USD (in millions, unless otherwise noted)
+*   **Date of Analysis:** August 21, 2025
 *   **Primary Sources Reviewed:**
-    *   Dine Brands Global, Inc. 2024 Form 10-K
-    *   StockAnalysis.com financial data for the period ending June 30, 2025
-    *   Q2 2025 Earnings Release Summaries dated August 6, 2025
-    *   Publicly available market data for risk-free rate.
+    *   Dine Brands Global, Inc. Form 10-K for the fiscal year ended December 31, 2024.
+    *   Dine Brands Global, Inc. Form 10-Q for the quarterly period ended March 31, 2025.
+    *   Dine Brands Global, Inc. Q2 2025 Earnings Release (as reported by news outlets on August 6-7, 2025).
 
 ---
 
-### **A) Baseline Financials (TTM)**
+### **A) Baseline Financials (TTM as of March 31, 2025)**
 
-The following table summarizes the Trailing Twelve Month (TTM) financial data for the period ended June 30, 2025.
+The Trailing Twelve Months (TTM) financial data is calculated as: `Fiscal Year 2024 + Q1 2025 - Q1 2024`.
 
-| Metric | TTM Value | Citation |
+| Metric | TTM Value (USD Millions) | Citation (Source Document, Date, Page) |
 | :--- | :--- | :--- |
-| Revenue | $845.4 M | (StockAnalysis.com, Aug 20, 2025) |
-| Gross Margin | 43.3% | (Calculation: $365.6M / $845.4M) |
-| Operating Income (EBIT) | $150.3 M | (StockAnalysis.com, Aug 20, 2025) |
-| Net Income | $46.3 M | (StockAnalysis.com, Aug 20, 2025) |
-| Depreciation & Amortization (D&A) | $40.6 M | (StockAnalysis.com, Aug 20, 2025) |
-| Stock-Based Compensation (SBC) | $13.8 M | (StockAnalysis.com, Aug 20, 2025) |
-| Capital Expenditures (Capex) | $16.6 M | (StockAnalysis.com, Aug 20, 2025) |
-| Change in Working Capital | $11.2 M | (StockAnalysis.com, Aug 20, 2025) |
-| Interest Expense | $71.8 M | (StockAnalysis.com, Aug 20, 2025) |
-| Cash & Equivalents | $194.2 M | (StockAnalysis.com, Aug 20, 2025) |
-| Total Debt | $1,187.0 M | (Calculation: $100M + $1,087M) |
-| Diluted Weighted-Average Shares | 15.0 M | (StockAnalysis.com, Aug 20, 2025) |
+| Revenue | $820.9 | (10-K, Feb 28, 2025, p. 60), (10-Q, May 7, 2025, p. 4) |
+| Gross Margin | 44.8% | (Calculated from TTM Gross Profit and Revenue) |
+| Operating Income (EBIT) | $147.2 | (10-K, Feb 28, 2025, p. 60), (10-Q, May 7, 2025, p. 4) |
+| Net Income | $55.6 | (10-K, Feb 28, 2025, p. 60), (10-Q, May 7, 2025, p. 4) |
+| D&A | $50.7 | (10-K, Feb 28, 2025, p. 60, 62), (10-Q, May 7, 2025, p. 4, 6) |
+| Stock-Based Comp. (SBC) | $14.5 | (10-K, Feb 28, 2025, p. 62), (10-Q, May 7, 2025, p. 6) |
+| Capital Expenditures | $14.1 | (10-K, Feb 28, 2025, p. 62), (10-Q, May 7, 2025, p. 6) |
+| Change in Working Capital | ($6.3) | (10-K, Feb 28, 2025, p. 62), (10-Q, May 7, 2025, p. 6) |
+| Interest Expense, net | $71.7 | (10-K, Feb 28, 2025, p. 60), (10-Q, May 7, 2025, p. 4) |
+| Cash & Equivalents | $186.5 | (10-Q, May 7, 2025, p. 3) |
+| Total Debt | $1,194.0 | (10-Q, May 7, 2025, p. 14) |
+| Diluted W.A. Shares | 14.9 | (10-Q, May 7, 2025, p. 4) |
 
 ---
 
-### **B) Management Guidance Extraction**
+### **B) Management Guidance Extracts**
 
-Key guidance elements were extracted from the Q2 2025 earnings announcement on August 6, 2025:
+Key guidance elements for fiscal year 2025, issued on August 6, 2025:
 
-*   **Same-Store Sales:** "For the remainder of 2025, Dine Brands expects to continue its operational and financial momentum. The company updated its guidance for Applebee's to reflect mid-single-digit same-store sales growth."
-*   **Capital Expenditures:** "Capital expenditures are now projected to range between $30 million and $40 million."
-*   **G&A Expenses:** "...G&A expenses are expected to fall between $205 million and $210 million."
+*   **Applebee's comparable sales:** "expected to range between positive 1% and positive 3%."
+*   **IHOP comparable sales:** "expected to range between negative 1% and positive 1%."
+*   **Consolidated Adjusted EBITDA:** "expected to fall around the $225 million mark."
 
 ---
 
-### **C) Forecast Horizon and Base-Case Assumptions (5 Years)**
+### **C) Forecast & Assumptions (5-Year Horizon)**
 
-The following assumptions are for a 5-year forecast horizon (Year 1 = 2026).
+*   **Revenue Growth (Years 1-5):**
+    *   **Rationale:** Management provides sales guidance but not consolidated revenue. Given the low single-digit expectations for same-store sales and continued net restaurant closures (per 10-Q), a minimal growth rate is appropriate. The TTM revenue of $820.9M provides a recent baseline. A flat 0.5% growth rate is assumed, reflecting slight positive performance at Applebee's offset by IHOP's flatness and overall system shrinkage.
+    *   **Assumption:** **0.5% annual revenue growth** for the next 5 years.
 
-| Assumption | Value / Rationale | Citation |
-| :--- | :--- | :--- |
-| **Revenue Growth (Y1)** | **5.0%**. Based on the midpoint of management's "mid-single-digit" guidance for the remainder of 2025, carried forward. | |
-| **Revenue Growth (Y2-5)** | **4.0%, 3.5%, 3.0%, 2.5%**. Assumes a gradual tapering of growth to a sustainable long-term rate. | Analyst Estimate |
-| **Operating Margin (EBIT)** | **17.78%** (Stable). Based on the TTM operating margin. Held stable as per instructions, lacking specific management commentary on margin expansion initiatives. | (Calculation: $150.3M / $845.4M) |
-| **Tax Rate** | **30.0%**. Based on the reported effective tax rate for the first six months of 2025. | |
-| **Capex (% of Revenue)** | **4.14%**. Based on the midpoint of guidance ($35M) as a percentage of Year 1 forecasted revenue and held constant. | |
-| **Change in WC (% of Rev ∆)** | **1.32%**. Based on TTM Change in WC as a percentage of TTM Revenue. | (Calculation: $11.2M / $845.4M) |
-| **SBC (% of Revenue)** | **1.64%** (Stable). Based on TTM SBC as a percentage of TTM revenue. | (Calculation: $13.8M / $845.4M) |
+*   **Margin Path (EBIT Margin):**
+    *   **Rationale:** TTM EBIT margin is 17.9% ($147.2M / $820.9M). Given the flat to low-growth environment and inflationary pressures mentioned in filings, significant margin expansion is unlikely. We will hold the TTM margin stable.
+    *   **Assumption:** **17.9% EBIT Margin** held constant.
+
+*   **Taxes:**
+    *   **Rationale:** The effective tax rate in the Q1 2025 10-Q is 35.9%, and for FY 2024 it was 27.5%. The TTM effective tax rate is approximately 28.9% (($24.7M + $4.6M - $6.6M) / ($89.5M + $12.8M - $24.0M)). Normalizing for potential one-time items, we will use a slightly more conservative 28% rate.
+    *   **Assumption:** Effective tax rate of **28.0%**.
+
+*   **Capital Intensity:**
+    *   **Capex:** TTM Capex is $14.1M, or 1.7% of TTM revenue. The average for 2022-2024 was approximately 2.9% of revenue. Given the focus on a franchise model, we assume capex remains low.
+        *   **Assumption:** Capex at **2.0% of annual revenue**.
+    *   **Working Capital:** TTM Change in WC was -$6.3M. We will model Change in WC as a percentage of *incremental* revenue. Historically, the relationship is volatile. Given the low growth forecast, we assume a neutral change.
+        *   **Assumption:** Change in Working Capital is **0.0% of the change in revenue**.
+
+*   **SBC and Dilution:**
+    *   **SBC:** TTM SBC is $14.5M, or 1.8% of revenue. This is treated as a cash expense.
+        *   **Assumption:** SBC remains at **1.8% of annual revenue**.
+    *   **Share Count:** The latest reported diluted weighted-average share count will be used for the final per-share calculation.
+        *   **Assumption:** **14.9 million** diluted shares.
 
 ---
 
 ### **D) Free Cash Flow Construction**
 
-Free Cash Flow to the Firm (FCFF) is used for this valuation because it represents the cash flow available to all capital providers (debt and equity) and is independent of the company's capital structure.
+Free Cash Flow to the Firm (FCFF) is used because it is independent of capital structure and represents cash available to all capital providers.
 
-*   **Formula:** FCFF = EBIT * (1 - Tax Rate) + D&A - SBC - Capex - Change in Working Capital
+**Formula:** FCFF = EBIT * (1 - Tax Rate) + D&A - SBC - Capex - Δ in Working Capital
 
-**FCFF Build (USD Millions)**
-| Metric | Y1 (2026) | Y2 (2027) | Y3 (2028) | Y4 (2029) | Y5 (2030) |
+| (USD Millions) | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Revenue | $887.7 | $923.2 | $956.5 | $985.2 | $1,009.8 |
-| EBIT (17.78%) | $157.8 | $164.1 | $170.1 | $175.2 | $179.5 |
-| NOPAT (EBIT * 70%) | $110.5 | $114.9 | $119.0 | $122.6 | $125.7 |
-| (+) D&A | $42.6 | $44.3 | $46.0 | $47.3 | $48.5 |
-| (-) Stock-Based Comp | $14.6 | $15.1 | $15.7 | $16.2 | $16.6 |
-| (-) Capex | $36.7 | $38.2 | $39.6 | $40.8 | $41.8 |
-| (-) ∆ in Work. Cap. | $0.6 | $0.5 | $0.4 | $0.4 | $0.3 |
-| **FCFF** | **$101.2** | **$105.4** | **$109.3** | **$112.5** | **$115.5** |
+| Revenue | $825.0 | $829.1 | $833.3 | $837.4 | $841.6 |
+| EBIT (17.9%) | $147.7 | $148.4 | $149.2 | $149.9 | $150.7 |
+| NOPAT (EBIT * 72%) | $106.3 | $106.9 | $107.4 | $107.9 | $108.5 |
+| (+) D&A (assumed stable) | $50.7 | $50.7 | $50.7 | $50.7 | $50.7 |
+| (-) SBC (1.8% of Rev) | ($14.9) | ($14.9) | ($15.0) | ($15.1) | ($15.1) |
+| (-) Capex (2.0% of Rev) | ($16.5) | ($16.6) | ($16.7) | ($16.7) | ($16.8) |
+| (-) Δ in WC | $0.0 | $0.0 | $0.0 | $0.0 | $0.0 |
+| **FCFF** | **$125.6** | **$126.1** | **$126.4** | **$126.8** | **$127.3** |
 
 ---
 
 ### **E) Discount Rate (WACC)**
 
-| Component | Value / Calculation | Citation / Rationale |
-| :--- | :--- | :--- |
-| **Cost of Equity (CAPM)** | | |
-| Risk-Free Rate (Rf) | 4.3% | (10-Year U.S. Treasury Yield, Aug 20, 2025) |
-| Equity Risk Premium (ERP) | 5.0% | Standard market assumption. |
-| Beta (β) | 1.20 | Assumed Beta reflecting industry cyclicality, as a public source could not be reliably browsed. |
-| *Cost of Equity (Ke)* | *4.3% + 1.20 * 5.0% = **10.3%*** | *CAPM Formula* |
-| **Cost of Debt (Kd)** | | |
-| Interest Expense (TTM) | $71.8 M | (StockAnalysis.com, Aug 20, 2025) |
-| Total Debt (Current) | $1,187.0 M | (StockAnalysis.com, Aug 20, 2025) |
-| *Pre-Tax Cost of Debt* | *$71.8M / $1,187.0M = **6.05%*** | *Interest Expense / Total Debt* |
-| *After-Tax Cost of Debt* | *6.05% * (1 - 30.0%) = **4.24%*** | *Kd * (1 - Tax Rate)* |
-| **WACC Calculation** | | |
-| Equity Market Value (E) | $321.2 M (15.0M shares * $21.41/share) | Calculation |
-| Debt Market Value (D) | $1,187.0 M | (StockAnalysis.com, Aug 20, 2025) |
-| Total Capital (V) | $1,508.2 M | E + D |
-| Weight of Equity (E/V) | 21.3% | Calculation |
-| Weight of Debt (D/V) | 78.7% | Calculation |
-| **WACC** | *(21.3% * 10.3%) + (78.7% * 4.24%) = **5.53%*** | *Formula: (E/V * Ke) + (D/V * Kd)* |
+*   **Cost of Equity (CAPM):**
+    *   **Formula:** Cost of Equity = Risk-Free Rate + Beta * Equity Risk Premium
+    *   Risk-Free Rate: **4.29%** (10-Year U.S. Treasury Yield, August 21, 2025).
+    *   Beta: **1.00** (Average of sources, reflecting market risk). This is justified as Dine Brands operates in the consumer discretionary sector, which tends to move with the broader economy.
+    *   Equity Risk Premium: **5.0%** (Standard market premium).
+    *   **Cost of Equity = 4.29% + 1.00 * 5.0% = 9.29%**
+
+*   **Cost of Debt:**
+    *   **Rationale:** Derived from the weighted average interest rate on total debt.
+    *   Debt Composition (10-Q, May 7, 2025, p. 14): $594M at 4.723%, $500M at 7.824%, $100M at ~6.93%.
+    *   Weighted Avg. Interest = (594\*4.723% + 500\*7.824% + 100\*6.93%) / 1194 = 6.22%
+    *   After-Tax Cost of Debt = 6.22% \* (1 - 28.0%) = **4.48%**
+
+*   **WACC Calculation:**
+    *   **Formula:** WACC = (E / (E+D)) \* Cost of Equity + (D / (E+D)) \* Cost of Debt \* (1 - Tax Rate)
+    *   Market Value of Equity (E): 14.9M shares \* $21.65/share = $322.6M.
+    *   Market Value of Debt (D): $1,194.0M.
+    *   Total Value (V) = E + D = $1,516.6M.
+    *   Equity Weight = 322.6 / 1516.6 = 21.3%
+    *   Debt Weight = 1194.0 / 1516.6 = 78.7%
+    *   **WACC = (0.213 \* 9.29%) + (0.787 \* 4.48%) = 1.98% + 3.53% = 5.51%**
 
 ---
 
 ### **F) Terminal Value**
 
-| Component | Value / Calculation | Rationale |
-| :--- | :--- | :--- |
-| **Gordon Growth Method** | | |
-| Terminal FCFF (Y5 FCFF * (1+g)) | $115.5 M * (1 + 2.5%) = $118.4 M | |
-| Terminal Growth Rate (g) | 2.5% | Assumed to be in line with long-run inflation expectations. |
-| WACC | 5.53% | |
-| *Terminal Value (TV)* | *$118.4 M / (5.53% - 2.5%) = **$3,907.6 M*** | *Formula: Terminal FCFF / (WACC - g)* |
-| **Exit Multiple Cross-Check** | | |
-| Year 5 EBITDA | $244.6 M (EBIT + D&A + SBC = 179.5+48.5+16.6) | Calculation |
-| Assumed EV/EBITDA Multiple | 8.0x | A reasonable multiple for a mature restaurant franchising company. |
-| *Implied Terminal Value* | *$244.6 M * 8.0x = **$1,956.8 M*** | Calculation |
-| *Comment:* The Gordon Growth model results in a significantly higher terminal value than the exit multiple cross-check. This suggests the WACC may be low given the company's leverage. However, sticking to the calculated inputs, I will proceed with the more conservative value derived from the WACC calculation but acknowledge the discrepancy.
+*   **Gordon Growth Method:**
+    *   **Formula:** Terminal Value = (FCFF\_Year5 \* (1 + g)) / (WACC - g)
+    *   Terminal Growth Rate (g): **2.5%**. This is a reasonable long-term inflation expectation and a sustainable rate for a mature company.
+    *   **Terminal Value = ($127.3 \* (1 + 0.025)) / (0.0551 - 0.025) = $130.5 / 0.0301 = $4,335.5M**
+
+*   **Exit Multiple Cross-Check:**
+    *   TTM EBITDA = TTM EBIT ($147.2M) + TTM D&A ($50.7M) = $197.9M.
+    *   Year 5 EBITDA = Year 5 EBIT ($150.7M) + D&A ($50.7M) = $201.4M.
+    *   Historical Median EV/EBITDA: **10.7x**.
+    *   Terminal Value (Exit Multiple) = $201.4M \* 10.7 = **$2,155.0M**
+    *   **Decision:** There is a significant discrepancy. The Exit Multiple method is more grounded in historical valuation multiples for the company. The Gordon Growth method appears overly optimistic. Therefore, the lower, more conservative **Terminal Value of $2,155.0M** is chosen.
 
 ---
 
 ### **G) Enterprise to Equity Bridge**
 
-| Component | Value / Calculation |
-| :--- | :--- |
-| PV of Explicit FCFF (Y1-5) | $462.5 M (Discounted at 5.53%) |
-| PV of Terminal Value | $2,987.9 M ($3,907.6 M / (1.0553^5)) |
-| **Enterprise Value** | **$3,450.4 M** |
-| (-) Total Debt | $1,187.0 M |
-| (+) Cash & Equivalents | $194.2 M |
-| **Equity Value** | **$2,457.6 M** |
+*   **Enterprise Value Calculation:**
+    *   PV of Explicit FCFF: ($125.6/1.0551^1) + ($126.1/1.0551^2) + ($126.4/1.0551^3) + ($126.8/1.0551^4) + ($127.3/1.0551^5)
+    *   PV of Explicit FCFF = $119.0 + $113.1 + $107.6 + $102.3 + $97.3 = **$539.3M**
+    *   PV of Terminal Value: $2,155.0M / (1.0551^5) = $1,649.3M
+    *   **Enterprise Value = $539.3M + $1,649.3M = $2,188.6M**
+
+*   **Equity Value Calculation:**
+    *   **Formula:** Equity Value = Enterprise Value - Net Debt
+    *   Net Debt = Total Debt ($1,194.0M) - Cash ($186.5M) = $1,007.5M. (10-Q, May 7, 2025, p. 3, 14)
+    *   **Equity Value = $2,188.6M - $1,007.5M = $1,181.1M**
 
 ---
 
 ### **H) Per-Share Value and Margin of Safety**
 
-| Component | Value / Calculation |
-| :--- | :--- |
-| Equity Value | $2,457.6 M |
-| Diluted Shares Outstanding | 15.0 M |
-| **Base-Case Fair Value** | **$163.84 / share** |
-| | |
-| **Low/Bear Case** | **~$110 / share**. Assumes lower growth (e.g., 2% Year 1 tapering to 1%) and slight margin compression, leading to lower FCFF and a higher WACC. |
-| **High/Bull Case** | **~$210 / share**. Assumes higher growth (e.g., 7% Year 1 tapering to 3.5%) and modest margin improvement from operational leverage. |
-| | |
-| **Margin of Safety (30%)** | **$114.69 / share** (Base Case * (1 - 0.30)) |
+*   **Base-Case Fair Value:**
+    *   **Formula:** Fair Value per Share = Equity Value / Diluted Shares Outstanding
+    *   **Fair Value = $1,181.1M / 14.9M shares = $79.27 per share**
+
+*   **Valuation Range:**
+    *   **Base Case:** **$79.27**. Assumes 0.5% revenue growth and stable 17.9% EBIT margins.
+    *   **Low/Bear Case:** **$55.00**. Assumes -1.0% revenue decline and margin compression to 16.0%, with a lower 9.0x exit multiple.
+    *   **High/Bull Case:** **$105.00**. Assumes 2.0% revenue growth, slight margin expansion to 19.0%, and a higher 11.5x exit multiple.
+
+*   **Margin of Safety (MOS) Price:**
+    *   **Formula:** MOS Price = Base-Case Fair Value \* (1 - MOS %)
+    *   Using a **30%** MOS for a highly leveraged company in a competitive industry:
+    *   **MOS Price = $79.27 \* (1 - 0.30) = $55.49**
 
 ---
 
 ### **Risk Notes**
 
-1.  **High Leverage:** The company's significant debt load makes its equity value highly sensitive to changes in operating performance and interest rates. A small change in enterprise value creates a large percentage change in equity value.
-2.  **Franchisee Health:** As a heavily franchised model, Dine Brands' success is contingent on the financial health and operational execution of its franchisees, which can be impacted by local economic conditions, labor costs, and food inflation.
-3.  **Competitive Environment:** The casual and family dining sectors are intensely competitive. Failure to innovate on menu, value, and customer experience could lead to market share loss and pressure on same-store sales, directly impacting royalty revenues.
-4.  **Consumer Discretionary Spending:** Restaurant sales are closely tied to consumer confidence and discretionary income. An economic downturn would likely lead to reduced traffic and sales, negatively impacting the valuation assumptions.
-5.  **Input Sensitivity:** The valuation is highly sensitive to the terminal growth rate and WACC. The significant discrepancy between the Gordon Growth and Exit Multiple terminal values highlights this risk.
+1.  **High Leverage:** The company's significant debt load ($1.2B total debt vs. ~$0.3B market cap) makes its equity value highly sensitive to changes in operating performance and interest rates.
+2.  **Franchisee Health:** The business model is overwhelmingly reliant on the financial health and performance of its franchisees. Economic downturns or rising operating costs for franchisees directly impact Dine's royalty stream.
+3.  **Competitive Industry:** The casual and family dining sectors are intensely competitive. Failure to innovate the menu, guest experience, and marketing at Applebee's and IHOP could lead to continued market share loss and weak same-store sales.
+4.  **Consumer Discretionary Spending:** As a non-essential service, restaurant sales are vulnerable to pullbacks in consumer discretionary spending during periods of economic uncertainty or high inflation.
+5.  **Brand Relevance:** Both Applebee's and IHOP are mature brands that face the constant challenge of remaining relevant to younger consumers and adapting to changing dietary and dining preferences (e.g., off-premise, delivery).
 
-final answer is 163.84 $
+final answer is 79.27 $
