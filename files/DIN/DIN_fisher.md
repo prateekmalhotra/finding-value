@@ -1,99 +1,105 @@
-Company: Dine Brands Global, Inc. (DIN)
-Date of Analysis: August 20, 2025
-Primary Sources Reviewed: Dine Brands Global, Inc. 2024 Form 10-K (filed February 21, 2025), various Q2 and Q3 2024 earnings releases, Q2 2025 earnings call summaries.
 
-### 1) Products/Services with Long Runway
+.
+Here is a detailed analysis of Dine Brands Global, Inc. (DIN) using Philip A. Fisher’s “15 Points” checklist.
+
+**Company:** Dine Brands Global, Inc. (DIN)
+**Date of Analysis:** August 21, 2025
+**Primary Sources Reviewed:**
+*   Form 10-K for the year ended December 31, 2024, filed February 21, 2025.
+*   Various news and analyst articles.
+
+**1) Products/Services with Long Runway**
 **Question:** Does the company have products or services with sufficient market potential to make possible a sizable increase in sales for at least several years?
-**Reasoning & Evidence:** The company has a multi-year pipeline for unit growth, which provides a path to higher system-wide sales. As of December 31, 2024, franchisees have signed commitments to build 285 IHOPs, 122 Fuzzy's, and 68 Applebee's locations. International expansion also presents a long-term opportunity, as international revenue currently constitutes less than 3% of the total. However, this is offset by significant weakness in existing markets, with Applebee's and IHOP posting negative domestic same-restaurant sales of -4.2% and -2.0%, respectively, for the full year 2024.
-**Answer:** Yes
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025)
+**Reasoning & Evidence:** Dine Brands is pursuing growth through several avenues. Management is focused on dual-brand restaurant formats, which have shown early signs of success, with some locations delivering 2-3 times higher sales than single-brand units. The company is also focused on international expansion and had commitments for approximately 59 new Applebee's and 179 new IHOP restaurants internationally as of December 31, 2024. However, domestic growth is a challenge, with Applebee's system-wide sales declining by 5.5% and IHOP's by 1.1% in 2024, driven by negative same-restaurant sales.
+**Answer:** No
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025], [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRd6TLwzuwRUq6Di8KemYZwMfs7JUkRe5Uvb6sPrFTSHNtLZrg3RhIBcC8XARs33sLDfySt8SpfydQ0GBVSSp6egQBalbNNkZl0a20xu4MaAVGWY4iFJRPJwUIRNqCc0SPr_5bH5RsJtc2bPBVf73SwyEvUPDStjJErT-Db_dlg0qnjTbtVRmDZIKs_fQVZA4gBEdaawPeVsFDhY_rHxlH5QyITZlUgSPOyIhhBhZ5YdLGxWYGIvN2, September 23, 2024]
 
-### 2) Commitment to Ongoing Development
+**2) Commitment to Ongoing Development**
 **Question:** Does management have a determination to continue to develop products or processes that will further increase total sales potential once current lines mature?
-**Reasoning & Evidence:** Management's stated strategy includes "innovation and evolution of our existing brands as well as exploring investments in or acquisitions of new concepts." This is evidenced by the December 2022 acquisition of the Fuzzy's Taco Shop brand to add a new growth vector. The company is also actively investing in technology platforms like online ordering, delivery, and the "International Bank of Pancakes" loyalty program for IHOP, which was launched in 2022 to drive visit frequency.
+**Reasoning & Evidence:** Management is actively investing in technology and new platforms to drive growth. These initiatives include online ordering, a mobile app, and a national delivery program with leading service providers. IHOP launched its "International Bank of Pancakes" loyalty program in 2022 to increase visit frequency and spending. Dine Brands is also exploring new restaurant formats, such as dual-branded locations and "ghost kitchens," to adapt to changing consumer preferences for off-premise dining.
 **Answer:** Yes
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025], [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6kILt-KgzqonU2VKSwY6nX0icGmPgjARyA8My2AxS7y0jg1Ccb55sQejE-GjvxCoSHK1PaaPqIjhQoXKWvPcFGD16rTxV9c9puylb6ISdkMh_cx1Ewn6cPaCytGhWhQSnbcX84rM9968LPeu-, May 30, 2020]
 
-### 3) R&D Effectiveness Relative to Size
+**3) R&D Effectiveness Relative to Size**
 **Question:** How effective are the company’s R&D efforts in relation to its size?
-**Reasoning & Evidence:** For a restaurant operator, R&D is menu innovation, marketing, and technology development. The effectiveness of these efforts is best measured by same-restaurant sales. Applebee's has experienced seven consecutive quarters of same-store sales declines as of Q4 2024. For the full year 2024, Applebee's same-store sales fell 4.2% and IHOP's fell 2.0%. This performance lags that of peers like Texas Roadhouse, which saw same-store sales *growth* of 7.7% in Q4 2024, indicating Dine's development efforts are currently less effective than its competition's.
+**Reasoning & Evidence:** In the restaurant industry, R&D is primarily focused on culinary innovation and marketing. Dine Brands' advertising funds are a significant part of its model, with franchisees contributing a percentage of sales. For example, most Applebee's franchisees contribute 3.25% of gross sales to a national advertising fund, with a temporary increase to 4.25% through 2025. IHOP franchisees contribute 3.5% of gross sales to their national advertising fund. However, the effectiveness of this spending is questionable given the recent decline in same-restaurant sales at both brands.
 **Answer:** No
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025), [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbflhlOjkAXh3qDFQlhZGJ6QBf0ddzj3z1sHBKkDOEQFFcTECmaYgZyVFNuw_Hs7X-1bcqin31QZmoACvyufnl25TGF80ao0OuCtDiWPn-AWR2xupPjIA3jf2TOycS3PRfVJP6kSQG7p9d5uaieDvpPYFxCL2L9Cow7frW1cPJGmL1UIpnQfbzmuc2GTwyyOauyj1DinxZ8b69ZmOzP9e09nT91TIv] (March 20, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 4) Above-Average Sales Organization
+**4) Above-Average Sales Organization**
 **Question:** Does the company have an above-average sales organization?
-**Reasoning & Evidence:** The company's "sales" efforts consist of franchise development and brand marketing. On development, the company is underperforming, with two of its three brands experiencing a net reduction in restaurant count in 2024: Applebee's declined by 28 units and Fuzzy's by 15. On marketing, persistent negative same-restaurant sales at the flagship Applebee's and IHOP brands demonstrate an inability to effectively drive customer traffic and sales compared to the broader industry. This combination of a shrinking footprint and falling organic sales points to a below-average sales function.
+**Reasoning & Evidence:** As a franchisor, Dine Brands' "sales" efforts are focused on attracting and supporting franchisees. The company has a substantial global pipeline, with commitments for 285 new IHOP restaurants and approximately 68 new Applebee's restaurants as of December 31, 2024. However, net restaurant development has been negative for Applebee's, with a net reduction of 28 restaurants in 2024. IHOP saw a net increase of just 10 restaurants. This suggests challenges in converting the development pipeline into new openings.
 **Answer:** No
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025), [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbflhlOjkAXh3qDFQlhZGJ6QBf0ddzj3z1sHBKkDOEQFFcTECmaYgZyVFNuw_Hs7X-1bcqin31QZmoACvyufnl25TGF80ao0OuCtDiWPn-AWR2xupPjIA3jf2TOycS3PRfVJP6kSQG7p9d5uaieDvpPYFxCL2L9Cow7frW1cPJGmL1UIpnQfbzmuc2GTwyyOauyj1DinxZ8b69ZmOzP9e09nT91TIv] (March 20, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 5) Worthwhile Profit Margins
+**5) Worthwhile Profit Margins**
 **Question:** Does the company have a worthwhile profit margin?
-**Reasoning & Evidence:** Yes, the company's highly franchised business model produces strong profit margins. The core Franchise Operations segment generated a gross profit margin of 50.4% in fiscal 2024 ($346.1M profit on $686.0M revenue). The consolidated gross margin for the entire company, including lower-margin rental and company restaurant operations, was 46.2%. These margins are a structural benefit of the asset-light, royalty-based model.
+**Reasoning & Evidence:** As a highly franchised business, Dine Brands enjoys attractive margins. For the year ended December 31, 2024, the company's gross profit margin was 46.2% (Gross Profit of $375.3 million on Total Revenue of $812.3 million). The franchise operations segment, which generates the majority of revenue, has even higher margins. However, total gross profit decreased by $21.4 million in 2024 compared to 2023, indicating some pressure on profitability.
 **Answer:** Yes
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 6) Margin Improvement Actions
+**6) Margin Improvement Actions**
 **Question:** What is the company doing to maintain or improve profit margins?
-**Reasoning & Evidence:** The company exercises cost discipline at the corporate level, with 2024 G&A expenses declining due to the cessation of the IHOP Flip'd initiative and lower professional services fees. Management's stated intent to refranchise the 47 company-operated Applebee's restaurants "under favorable circumstances" shows a commitment to maintaining its high-margin, asset-light structure. In early 2025, the company also laid off 9% of its corporate workforce to align its cost structure with market conditions.
+**Reasoning & Evidence:** Dine Brands' primary strategy for maintaining and improving margins is its highly franchised business model, which minimizes capital investment and overhead. The company is also focused on leveraging its scale to drive efficiencies in areas like supply chain through its independent purchasing cooperative, CSCS. The company's focus on technology and off-premise dining also has the potential to improve unit-level economics for its franchisees, which would in turn support Dine's royalty revenues.
 **Answer:** Yes
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025), [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFC_RcId-o0QJ2koNv6dYPVpcfEwBvnKDZjXuv0cWA0JMOxvGsb3dVZSsPUfQVU6VVFGsSslc4_vDETZrG4bBZohetmF_ooKScA49Ke_rp-p1S06CD7vmqCS8fquMwMujokrvdl5wjVERNoidZMLhNC2WEVn6kgzQ2] (January 31, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 7) Labor & Personnel Relations
+**7) Labor & Personnel Relations**
 **Question:** Does the company have outstanding labor and personnel relations?
-**Reasoning & Evidence:** At the corporate level, the company states that relations with its 596 employees are good, and they are not represented by any collective bargaining agreements. There is no evidence of significant work stoppages or labor strife. However, the company laid off approximately 9% of its corporate staff in January 2025, citing "broader industry headwinds," which can negatively impact morale. Despite the layoffs, the absence of active disputes suggests relations are not a current risk to operations.
+**Reasoning & Evidence:** As of December 31, 2024, Dine Brands had 992 employees, with 396 at company-owned restaurants and 596 in corporate roles. The company states that its employees are not represented by any collective bargaining agreements and that it has not experienced any significant work stoppages, believing its employee relations to be good. The company has also established six Team Member Resource Groups to foster diversity and inclusion. There is no available information to suggest significant labor issues.
 **Answer:** Yes
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025), [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEd_FhaJMN1TxW7niNRvyaWceGdhitTJi83oZf9-sU7SGBnJAmmxbcg4MXHg8fQ0Fex26a-qwpSJacC6dwLXrl29jhF6RQcEeJNYehIYJheR270ctzMRt8rV6w29bAtpp0FTuF_z2ZBdMYzWJm-hQrYplfL3NadFG99KeTuotf2X7gzs9BIUxppBjJw3aWTQsTFtI3RcHyo_w4=] (February 3, 2025), [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-exq6bASEVtOEppZnQAW2I6PumAMMMZ892trVOjRFE5ywvmd2GJLAGTbNxZVkKewiHOhgCAA4a_KlM0cJZDc_VtIDHSbG2k9RlWqx9DMH59rY4KBuGKEfWIm7y6cQnEWe0iNrOG1CVQL5RnbOmy_WjegSishgRvhZwJnoaW2j_3wIMkpYQeUn_YH4MC06YEuRGEaJI9-oGn8SMw==] (January 31, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 8) Executive Relations
+**8) Executive Relations**
 **Question:** Does the company have outstanding executive relations?
-**Reasoning & Evidence:** The executive team shows reasonable stability. CEO John Peyton has been in his role since January 2021 (4.5-year tenure). The average tenure of the management team is 4.2 years and the board of directors is 5.1 years. There is no public evidence of significant recent turnover or conflict at the senior executive level.
+**Reasoning & Evidence:** There is no evidence of significant turnover or instability within the executive team or the Board of Directors from the reviewed documents. The company has established franchisee advisory councils for each of its brands (Applebee's Franchise Business Council, IHOP Franchise Leadership Council, and Fuzzy's Franchise Advisory Council) to foster positive working relationships with its franchisees, which is crucial for a franchisor.
 **Answer:** Yes
-**Citations:** [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHenPnedr4eFSIot3SrZfs8gPNzLVL5b9gjpUO6hy5tIW9OKqz996dL78wJy82jMDLKa01tzO0cbnJeDBYg29zfjCidVQeMyNcjc1Q35_-B8hbyhChCweKCPoJEDduzOL-OJoCzvfo3LaEFlNS_Xsj1VPOYxzRwt7pnu1TNz1sYXeWXLfpUYz8D1APHTmZ_sgBjL4=] (Accessed August 20, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 9) Depth of Management
+**9) Depth of Management**
 **Question:** Does the company have depth to its management?
-**Reasoning & Evidence:** The company operates with a corporate parent overseeing three distinct brands, each with its own president (Tony Moralejo for Applebee's, Lawrence Kim for IHOP, Patrick Kirk for Fuzzy's Taco Shop). This structure, supported by corporate functional heads like a CFO and CIO, provides a clear line of succession and operational leadership, mitigating key-person risk at the CEO level.
+**Reasoning & Evidence:** Dine Brands has a well-defined management structure with clear leadership at both the corporate and brand levels. The company's 10-K lists a number of executive officers beyond the CEO, including a CFO, General Counsel, and brand presidents for Applebee's and IHOP, indicating a clear division of responsibilities.
 **Answer:** Yes
-**Citations:** [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsU9XMDaSD7HSUdrP8o0F4xmYsjygFum0p0wQaidlZ37YN923BS5UMTDYLiPtW3pTiArQZY2zn6J5PIdfHPatQYJhv9Aq7ewMRLm0stJjBj58PeDS5c2r8p3cmDBgN1roeO7rp] (Accessed August 20, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 10) Cost Analysis & Accounting Controls
+**10) Cost Analysis & Accounting Controls**
 **Question:** How good are the company’s cost analysis and accounting controls?
-**Reasoning & Evidence:** The company's 2024 10-K includes an unqualified audit opinion from its independent registered public accounting firm, Ernst & Young LLP. In Item 9A of the filing, management concluded that its internal controls over financial reporting and its disclosure controls and procedures were effective as of December 31, 2024. There were no material weaknesses identified.
+**Reasoning & Evidence:** The company's independent registered public accounting firm, Ernst & Young LLP, issued an unqualified opinion on the consolidated financial statements and the effectiveness of internal control over financial reporting as of December 29, 2024. The 10-K provides detailed segment reporting, allowing for a clear analysis of the different revenue streams and their associated costs. There are no indications of material weaknesses or significant deficiencies in the company's accounting controls.
 **Answer:** Yes
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 11) Industry-Specific Competitive Clues
+**11) Industry-Specific Competitive Clues**
 **Question:** Are there other aspects of the business—peculiar to the industry—that give important clues about how outstanding the company may be versus competition?
-**Reasoning & Evidence:** A key clue for a franchisor is the health of its store portfolio. For Dine Brands, this presents a negative signal. The total number of Applebee's restaurants declined by 28 in 2024, and Fuzzy's declined by 15. Franchisees are closing more stores than they are opening, which is a strong indicator of declining brand health and franchisee profitability relative to other investment opportunities. This shrinking footprint, combined with underperforming same-store sales, suggests the company's brands are losing competitive ground.
+**Reasoning & Evidence:** For a restaurant franchisor, the health and sentiment of its franchisees are critical. Dine Brands has a high concentration of its Applebee's restaurants with a few large franchisees—the ten largest own 81% of all franchised Applebee's in the U.S. This creates a significant risk if one of these large franchisees faces financial difficulties. The recent negative same-restaurant sales growth at both major brands is a concerning sign in a highly competitive industry.
 **Answer:** No
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 12) Long-Range vs Short-Range Profit Outlook
+**12) Long-Range vs Short-Range Profit Outlook**
 **Question:** Does the company have a long-range outlook in regard to profits (willing to trade near-term results for durable growth)?
-**Reasoning & Evidence:** While the company's strategy involves long-term elements like acquisitions (Fuzzy's) and technology investments, recent commentary and actions are heavily focused on the short term. Management has explicitly stated the need to "do more in the near term to drive traffic" and address the "highly promotional operating environment." The decision to lay off corporate staff is a near-term cost-saving measure. Furthermore, the significant return of capital to shareholders via dividends and buybacks ($43.4 million in 2024) suggests a focus on current returns over aggressive reinvestment for future growth.
-**Answer:** No
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025), [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVaOrO2RWpLCyMLtcyon01T6-JaSFp5J-9R3k9503dowlvuRnloz9rbqmtB3VDfSzD059VGpF_ShRGwMtO5ZjNuCzSH2PXCXsFf7QNVLt0hVgjk2dKkBFm9uqgUXjNJnqhBlng-dSmzdU20hW0JuSPmHZiHgMqwg8Wf3d-qGE135T0boBTUGgiTr-NfRuyRbQAtsfCqITvuLd2-E_t3wi3biGF4vx3W6fc9Kae1xtT9chzZ5syR68=] (November 6, 2024)
+**Reasoning & Evidence:** Management is making long-term investments in technology, international expansion, and new restaurant formats like dual-branded locations. These initiatives require upfront investment and may not generate immediate returns, suggesting a willingness to prioritize long-term growth. The company's capital allocation strategy includes returning cash to shareholders through dividends and share buybacks, but it also emphasizes reinvesting in the business to drive future growth.
+**Answer:** Yes
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 13) Equity Financing Dilution Risk
+**13) Equity Financing Dilution Risk**
 **Question:** Is the company's financial position strong enough to fund foreseeable growth without resorting to equity financing that would meaningfully dilute existing shareholders?
-**Reasoning & Evidence:** The company's asset-light franchise model requires minimal capital expenditure ($14.1 million in 2024) and generates strong adjusted free cash flow ($106.4 million in 2024). Instead of issuing shares, the company is actively repurchasing them, with $12.1 million in buybacks during 2024 under a $250 million authorization. This demonstrates a strong capacity to fund operations and return capital without needing to issue dilutive equity.
+**Reasoning & Evidence:** Dine Brands has a significant amount of debt, with approximately $1.2 billion in long-term debt as of December 31, 2024. However, the company generates strong and predictable cash flow from its franchise operations. In 2024, the company generated $108.2 million in cash from operating activities. The company has a share repurchase program in place, having repurchased $12.1 million worth of stock in 2024, indicating that it is more likely to reduce than increase its share count.
 **Answer:** Yes
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 14) Candor with Investors
+**14) Candor with Investors**
 **Question:** Does management talk freely to investors when things are going well **and** when troubles occur (i.e., no “clam up”)?
-**Reasoning & Evidence:** Management has been candid in its public communications regarding poor performance. In the Q3 2024 earnings release, the CEO acknowledged consumer pullback and stated, "We know we need to do more in the near term to drive traffic and get back to better top-line performance." Similarly, the Q2 2025 earnings call summary noted that the company openly discussed its EPS miss against forecasts. This pattern of acknowledging specific weaknesses and challenges demonstrates transparency with investors.
+**Reasoning & Evidence:** The company’s 2024 10-K openly discusses the challenges facing its brands, including the decline in same-restaurant sales at both Applebee's and IHOP. The MD&A section provides a detailed analysis of the factors contributing to this decline, such as a decrease in traffic. This level of transparency suggests a willingness to be upfront with investors about both the successes and the challenges of the business.
 **Answer:** Yes
-**Citations:** [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHycXJ_NdlCbna2N2bjziWS32GBvFU9z4ZQcQZj5u-MryLZ8LPA39v3Yv4P0MaaPH0u5ml0pye9lkuAMGuFVTdiQN3dBFzbWp6E5SLdwKg-DiZgkVr5f4LILEDLjtvoTrELYPR9EyMcgVwOlOgf9qiBdeM8OkDUY1TRVMRtSNk-uJoErmneQYuvTMwctrH7Sfzvr8mwJl3nYyHK5g7HJ9JAbkfiIl_LZIu_NIRzmcw-yTTlD0Yseds849NTTI4xJfz8Hg==] (August 6, 2025), [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVaOrO2RWpLCyMLtcyon01T6-JaSFp5J-9R3k9503dowlvuRnloz9rbqmtB3VDfSzD059VGpF_ShRGwMtO5ZjNuCzSH2PXCXsFf7QNVLt0hVgjk2dKkBFm9uqgUXjNJnqhBlng-dSmzdU20hW0JuSPmHZiHgMqwg8Wf3d-qGE135T0boBTUGgiTr-NfRuyRbQAtsfCqITvuLd2-E_t3wi3biGF4vx3W6fc9Kae1xtT9chzZ5syR68=] (November 6, 2024)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
-### 15) Unquestionable Integrity
+**15) Unquestionable Integrity**
 **Question:** Does the company have a management of unquestionable integrity?
-**Reasoning & Evidence:** The company has a clean audit opinion on its financial statements and internal controls for fiscal 2024. A review of recent news and legal proceedings reveals class action lawsuits that are in the ordinary course of business for a large consumer-facing company (e.g., disputes over fees and ADA compliance), but no major scandals, fraud investigations, or regulatory actions that would call into question the integrity of senior management.
+**Reasoning & Evidence:** A review of the "Legal Proceedings" section of the 2024 10-K reveals that the company is subject to various lawsuits and claims arising in the ordinary course of business, which is not unusual for a company of its size. There is no mention of any material pending legal proceedings that would bring into question the integrity of management. The company's independent auditor has also not raised any concerns in this regard.
 **Answer:** Yes
-**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm] (February 21, 2025), [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6XICcW4qBRh1_CWjI_-Va18QedBFPUDWGtTd6QwW1KTHcHW0VsSgmwh65Fd320NBa3-6J_XJBM9XMNMM8xeeAZsMaDkeP0vty3YI7lu0CS6TscIFOQhLUDHmU97Pn7ZaXAkRpHVLBcPQJsFgkzXHIwofgMEUY80Yo2tY=] (Accessed August 20, 2025)
+**Citations:** [https://www.sec.gov/Archives/edgar/data/49754/000162828025010259/din-20241231.htm, February 21, 2025]
 
 ---
 **Synthesis:**
-Dine Brands Global exhibits the classic characteristics of a mature, asset-light franchisor. Its strongest positives are structural: a high-margin business model that generates significant free cash flow with low capital requirements, a stable executive team, and robust accounting controls. However, its operational performance is a major concern. The company's key negatives are rooted in a clear lack of competitiveness, evidenced by persistent same-store sales declines and a shrinking restaurant footprint for its Applebee's and Fuzzy's brands. This indicates that its product and marketing development efforts are currently ineffective. The most critical variable that could change the score in the next 12-24 months is a reversal of the negative same-store sales trend. A return to sustained positive organic growth would flip the "No" answers for R&D Effectiveness, Sales Organization, and Industry Clues to "Yes", fundamentally improving the investment thesis. Specific evidence for this would be multiple consecutive quarters of positive same-restaurant sales and traffic, particularly at Applebee's, and a stabilization or reversal of the net decline in franchised units.
+Dine Brands Global exhibits many of the characteristics of a stable, mature business, including strong profit margins, a commitment to returning capital to shareholders, and a management team that appears to be transparent and have a long-term focus. The company's greatest strengths lie in its highly franchised business model, which generates predictable cash flow, and its commitment to technological innovation and international growth. However, the company faces significant headwinds in its core domestic markets, with declining same-restaurant sales at both Applebee's and IHOP. The key variables that will determine the company's future success and a potential improvement in its Fisher score are the performance of its dual-branded restaurant concept, its ability to translate its international development pipeline into profitable growth, and a reversal of the negative sales trends in the U.S. To turn the "No" answers to "Yes," Dine Brands would need to demonstrate sustained positive same-restaurant sales growth in its domestic markets, accelerate net new unit growth, and prove the effectiveness of its marketing spend in driving traffic.
 
-**fisher score is 10 / 15**
+**fisher score is 11 / 15**
